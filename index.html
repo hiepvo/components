@@ -8,40 +8,41 @@
   <link rel = "stylesheet" href = "stylesheets/main.css">
 </head>
 <body>
-<header class = "grid__row" id = "page-header">
+<header id = "page-header">
   <div class = "grid__col12"><h1>UI Frameworks <span class = "highlighted">Case Study</span></h1></div>
 </header>
 <div class = "grid">
   <div class = "grid__row">
-    <div class = "grid__col2" id = "sidebar">
-      <nav id = "component-nav">
-        <h2>Components</h2>
-        <ul>
-          <li><a href = "#buttons">Buttons</a></li>
-          <li><a href = "#carousels">Carousel</a></li>
-          <li><a href = "#cart-modal">Cart Modal</a></li>
-          <li> <a href = "#chips">Chips</a></li>
-          <li><a href = "#shopCart-table">Shop Cart Table</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class = "grid__col9">
-      <section id = "buttons">
-        <h2>Buttons</h2>
-        <article class = "section-content">
-          <div class = "wrapper-content">
-            <h1>Basic buttons</h1>
-            <button class = "btn btn-primary">Primary</button>
-            <button class = "btn btn-default">Default</button>
-            <button class = "btn btn-secondary">Secondary</button>
-            <button class = "btn btn-success">Success</button>
-            <button class = "btn btn-info">Info</button>
-            <button class = "btn btn-warning">warning</button>
-            <button class = "btn btn-danger">danger</button>
-          </div>
-          <h5>HTML</h5>
-          <pre class = "language-markup">
+    <div class="grid__container">
+      <div class = "grid__col2" id = "sidebar">
+        <nav id = "component-nav">
+          <h2>Components</h2>
+          <ul>
+            <li tabindex = "0"><a href = "#buttons">Buttons</a></li>
+            <li tabindex = "0"><a href = "#accordion">Accordion</a></li>
+            <li tabindex = "0"><a href = "#carousels">Carousel</a></li>
+            <li tabindex = "0"><a href = "#cart-modal">Cart Modal</a></li>
+            <li tabindex = "0"><a href = "#chips">Chips</a></li>
+            <li tabindex = "0"><a href = "#shopCart-table">Shop Cart Table</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class = "grid__col9">
+        <section id = "buttons">
+          <h2>Buttons</h2>
+          <article class = "section-content">
+            <div class = "wrapper-content">
+              <h1>Basic buttons</h1>
+              <button class = "btn btn-primary">Primary</button>
+              <button class = "btn btn-default">Default</button>
+              <button class = "btn btn-secondary">Secondary</button>
+              <button class = "btn btn-success">Success</button>
+              <button class = "btn btn-info">Info</button>
+              <button class = "btn btn-warning">warning</button>
+              <button class = "btn btn-danger">danger</button>
+            </div>
+            <h5>HTML</h5>
+            <pre class = "language-markup">
             <code class = "language-markup">
 &lt;button class = "btn btn-primary">Primary&lt;/button&gt;
 &lt;button class = "btn btn-default">Default&lt;/button&gt;
@@ -51,26 +52,26 @@
 &lt;button class = "btn btn-warning">Warning&lt;/button&gt;
           </code>
           </pre>
-          <div class = "wrapper-content">
-            <h1>Additional buttons</h1>
-            <button class = "btn btn-elegant">Elegant</button>
-            <button class = "btn btn-unique">Unique</button>
-            <button class = "btn btn-pink">Pink</button>
-            <button class = "btn btn-purple">Purple</button>
-            <button class = "btn btn-deep-purple">Deep Purple</button>
-            <button class = "btn btn-indigo">Indigo</button>
-            <button class = "btn btn-cyan">Cyan</button>
-            <button class = "btn btn-light-green">Light Green</button>
-            <button class = "btn btn-lime">Lime</button>
-            <button class = "btn btn-yellow">Yellow</button>
-            <button class = "btn btn-amber">Amber</button>
-            <button class = "btn btn-orange">Orange</button>
-            <button class = "btn btn-deep-orange">Deep Orange</button>
-            <button class = "btn btn-brown">Brown</button>
-            <button class = "btn btn-blue-grey">Blue Grey</button>
-          </div>
-          <h5>HTML</h5>
-          <pre class = "language-markup">
+            <div class = "wrapper-content">
+              <h1>Additional buttons</h1>
+              <button class = "btn btn-elegant">Elegant</button>
+              <button class = "btn btn-unique">Unique</button>
+              <button class = "btn btn-pink">Pink</button>
+              <button class = "btn btn-purple">Purple</button>
+              <button class = "btn btn-deep-purple">Deep Purple</button>
+              <button class = "btn btn-indigo">Indigo</button>
+              <button class = "btn btn-cyan">Cyan</button>
+              <button class = "btn btn-light-green">Light Green</button>
+              <button class = "btn btn-lime">Lime</button>
+              <button class = "btn btn-yellow">Yellow</button>
+              <button class = "btn btn-amber">Amber</button>
+              <button class = "btn btn-orange">Orange</button>
+              <button class = "btn btn-deep-orange">Deep Orange</button>
+              <button class = "btn btn-brown">Brown</button>
+              <button class = "btn btn-blue-grey">Blue Grey</button>
+            </div>
+            <h5>HTML</h5>
+            <pre class = "language-markup">
             <code class = "language-markup">
 &lt;button class = "btn btn-elegant">Elegant&lt;/button&gt;
 &lt;button class = "btn btn-unique">Unique&lt;/button&gt;
@@ -88,18 +89,18 @@
 &lt;button class = "btn btn-blue-grey">Blue Grey&lt;/button&gt;
             </code>
           </pre>
-          <div class = "wrapper-content">
-            <h1>Rounded buttons</h1>
-            <button class = "btn btn-primary btn-rounded">Primary</button>
-            <button class = "btn btn-default btn-rounded">Default</button>
-            <button class = "btn btn-secondary btn-rounded">Secondary</button>
-            <button class = "btn btn-success btn-rounded">Success</button>
-            <button class = "btn btn-info btn-rounded">Info</button>
-            <button class = "btn btn-warning btn-rounded">warning</button>
-            <button class = "btn btn-danger btn-rounded">danger</button>
-          </div>
-          <h5>HTML</h5>
-          <pre class = "language-markup">
+            <div class = "wrapper-content">
+              <h1>Rounded buttons</h1>
+              <button class = "btn btn-primary btn-rounded">Primary</button>
+              <button class = "btn btn-default btn-rounded">Default</button>
+              <button class = "btn btn-secondary btn-rounded">Secondary</button>
+              <button class = "btn btn-success btn-rounded">Success</button>
+              <button class = "btn btn-info btn-rounded">Info</button>
+              <button class = "btn btn-warning btn-rounded">warning</button>
+              <button class = "btn btn-danger btn-rounded">danger</button>
+            </div>
+            <h5>HTML</h5>
+            <pre class = "language-markup">
             <code class = "language-markup">
 &lt;button class = "btn btn-primary btn-rounded">Primary&lt;/button&gt;
 &lt;button class = "btn btn-default btn-rounded">Default&lt;/button&gt;
@@ -109,19 +110,19 @@
 &lt;button class = "btn btn-warning btn-rounded">Warning&lt;/button&gt;
             </code>
           </pre>
-          <div class = "wrapper-content">
-            <h1>Small and large buttons</h1>
-            <button class = "btn btn-elegant btn-sm">Elegant</button>
-            <button class = "btn btn-deep-orange btn-sm">Deep Orange</button>
-            <button class = "btn btn-pink btn-md">Pink</button>
-            <button class = "btn btn-yellow btn-md">Yellow</button>
-            <button class = "btn btn-amber btn-md">Amber</button>
-            <button class = "btn btn-purple btn-lg">Purple</button>
-            <button class = "btn btn-deep-purple btn-lg">Deep Purple</button>
-            <button class = "btn btn-indigo btn-lg">Indigo</button>
-          </div>
-          <h5>HTML</h5>
-          <pre class = "language-markup">
+            <div class = "wrapper-content">
+              <h1>Small and large buttons</h1>
+              <button class = "btn btn-elegant btn-sm">Elegant</button>
+              <button class = "btn btn-deep-orange btn-sm">Deep Orange</button>
+              <button class = "btn btn-pink btn-md">Pink</button>
+              <button class = "btn btn-yellow btn-md">Yellow</button>
+              <button class = "btn btn-amber btn-md">Amber</button>
+              <button class = "btn btn-purple btn-lg">Purple</button>
+              <button class = "btn btn-deep-purple btn-lg">Deep Purple</button>
+              <button class = "btn btn-indigo btn-lg">Indigo</button>
+            </div>
+            <h5>HTML</h5>
+            <pre class = "language-markup">
             <code class = "language-markup">
 &lt;button class = "btn btn-elegant btn-sm">Elegant&lt;/button&gt;
 &lt;button class = "btn btn-orange btn-sm">Orange&lt;/button&gt;
@@ -134,19 +135,19 @@
 &lt;button class = "btn btn-indigo btn-lg">Blue Grey&lt;/button&gt;
             </code>
           </pre>
-          <div class = "wrapper-content">
-            <h1>Social buttons</h1>
-            <button type = "button" class = "btn btn-fb"><i class = "fa fa-facebook social-icon"></i> Facebook
-            </button>
-            <button type = "button" class = "btn btn-tw"><i class = "fa fa-twitter social-icon"></i> Twitter
-            </button>
-            <button type = "button" class = "btn btn-gplus"><i class = "fa fa-google-plus social-icon"></i> Google +
-            </button>
-            <button type = "button" class = "btn btn-li"><i class = "fa fa-linkedin social-icon"></i> Linkedin
-            </button>
-          </div>
-          <h5>HTML</h5>
-          <pre class = "language-markup">
+            <div class = "wrapper-content">
+              <h1>Social buttons</h1>
+              <button type = "button" class = "btn btn-fb"><i class = "fa fa-facebook social-icon"></i> Facebook
+              </button>
+              <button type = "button" class = "btn btn-tw"><i class = "fa fa-twitter social-icon"></i> Twitter
+              </button>
+              <button type = "button" class = "btn btn-gplus"><i class = "fa fa-google-plus social-icon"></i> Google +
+              </button>
+              <button type = "button" class = "btn btn-li"><i class = "fa fa-linkedin social-icon"></i> Linkedin
+              </button>
+            </div>
+            <h5>HTML</h5>
+            <pre class = "language-markup">
             <code class = "language-markup">
 &lt;button class = "btn btn-fb">Elegant&lt;/button&gt;
 &lt;button class = "btn btn-tw">Orange&lt;/button&gt;
@@ -154,17 +155,17 @@
 &lt;button class = "btn btn-li">Pink&lt;/button&gt;
             </code>
           </pre>
-          <div class = "wrapper-content">
-            <h1>Wave buttons</h1>
-            <button class = "btn btn-primary waves-effect ring">Primary</button>
-            <button class = "btn btn-default waves-effect ring">Default</button>
-            <button class = "btn btn-secondary waves-effect ring">Secondary</button>
-            <button class = "btn btn-success waves-effect fill">Success</button>
-            <button class = "btn btn-info waves-effect fill">Info</button>
-            <button class = "btn btn-warning waves-effect fill">warning</button>
-          </div>
-          <h5>HTML</h5>
-          <pre class = "language-markup">
+            <div class = "wrapper-content">
+              <h1>Wave buttons</h1>
+              <button class = "btn btn-primary waves-effect ring">Primary</button>
+              <button class = "btn btn-default waves-effect ring">Default</button>
+              <button class = "btn btn-secondary waves-effect ring">Secondary</button>
+              <button class = "btn btn-success waves-effect fill">Success</button>
+              <button class = "btn btn-info waves-effect fill">Info</button>
+              <button class = "btn btn-warning waves-effect fill">warning</button>
+            </div>
+            <h5>HTML</h5>
+            <pre class = "language-markup">
             <code class = "language-markup">
 &lt;button class = "btn btn-primary waves-effect ring">Primary&lt;/button&gt;
 &lt;button class = "btn btn-default waves-effect ring">Default&lt;/button&gt;
@@ -174,497 +175,507 @@
 &lt;button class = "btn btn-warning waves-effect fill">Warning&lt;/button&gt;
             </code>
           </pre>
-        </article>
-      </section>
-      <!-- End Buttons -->
-      <section id="accordion">
-        <h2>Accordion</h2>
-        <div class = "accordion">
-          <ul>
-            <li>
-              <input type = "checkbox" id = "appetizers" name = "appetizers"><label for = "appetizers">Appetizers</label>
-              <div class = "accordion__content">
-                <h3>Check out our tasty apps</h3>
-                <h4>Happy hour menu - half off!!</h4>
-                <p>Chicken Wings (6) - 5.99$</p>
-                <p>Calamari - 7.99$</p>
-                <p>Garlic breaded pickles - 4.59$</p>
-                <p>Garlic bread - 5.69$</p>
-              </div>
-            </li>
-            <li>
-              <input type = "checkbox" id = "entrees" name = "entrees"><label for = "entrees">Entrees</label>
-              <div class = "accordion__content">
-                <h3>Choose from a wide range of pastas, combos and signature dishes</h3>
-                <h4>Pastas</h4>
-                <p>Chicken Wings (6) - 5.99$</p>
-                <p>Calamari - 7.99$</p>
-                <p>Garlic breaded pickles - 4.59$</p>
-              </div>
-            </li>
-            <li>
-              <input type = "checkbox" id = "desserts" name = "desserts"><label for = "desserts">Desserts</label>
-              <div class = "accordion__content">
-                <h3>New Summer Special!!</h3>
-                <h4>Shakes and Ice Creams</h4>
-                <p>Turtle Caramel Shake - 7.99$</p>
-                <p>Chocolate Brownie Bite - 4.99$</p>
-              </div>
-            </li>
-            <li>
-              <input type = "checkbox" id = "soups" name = "soups"><label for = "soups">Soups & Salads</label>
-              <div class = "accordion__content">
-                <h3>Do Not Miss This Special!!</h3>
-                <h4>Soups</h4>
-                <p>Homemade Soup - 2.99$</p>
-                <p>Tofu Miso Soup - 1.99$</p>
-                <h4>Salads</h4>
-                <p>Vege-Sunomono - 3.50$</p>
-                <p>Damiko House Salad - 13.50$</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id = "carousels">
-        <h2>Carousel with Caption</h2>
-        <div class = "carousel">
-          <input type = "radio" name = "carousel-cap-item" id = "ci-1" checked = "checked"
-                 class = "carousel--bullet"/>
-          <div class = "carousel--item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
-            <label for = "ci-4" class = "carousel--nav carousel--nav-previous"></label>
-            <label id = "next" for = "ci-2" class = "carousel--nav carousel--nav-next"></label>
-            <div class = "carousel-caption">
-              <h3>Heading 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
+          </article>
+        </section>
+        <!-- End Buttons -->
+        <section id = "accordion">
+          <h2>Accordion</h2>
+          <div class = "accordion">
+            <ul>
+              <li>
+                <input type = "checkbox" id = "appetizers" name = "appetizers"><label
+                  for = "appetizers">Appetizers</label>
+                <div class = "accordion__content">
+                  <h3>Check out our tasty apps</h3>
+                  <h4>Happy hour menu - half off!!</h4>
+                  <p>Chicken Wings (6) - 5.99$</p>
+                  <p>Calamari - 7.99$</p>
+                  <p>Garlic breaded pickles - 4.59$</p>
+                  <p>Garlic bread - 5.69$</p>
+                </div>
+              </li>
+              <li>
+                <input type = "checkbox" id = "entrees" name = "entrees"><label for = "entrees">Entrees</label>
+                <div class = "accordion__content">
+                  <h3>Choose from a wide range of pastas, combos and signature dishes</h3>
+                  <h4>Pastas</h4>
+                  <p>Chicken Wings (6) - 5.99$</p>
+                  <p>Calamari - 7.99$</p>
+                  <p>Garlic breaded pickles - 4.59$</p>
+                </div>
+              </li>
+              <li>
+                <input type = "checkbox" id = "desserts" name = "desserts"><label for = "desserts">Desserts</label>
+                <div class = "accordion__content">
+                  <h3>New Summer Special!!</h3>
+                  <h4>Shakes and Ice Creams</h4>
+                  <p>Turtle Caramel Shake - 7.99$</p>
+                  <p>Chocolate Brownie Bite - 4.99$</p>
+                </div>
+              </li>
+              <li>
+                <input type = "checkbox" id = "soups" name = "soups"><label for = "soups">Soups & Salads</label>
+                <div class = "accordion__content">
+                  <h3>Do Not Miss This Special!!</h3>
+                  <h4>Soups</h4>
+                  <p>Homemade Soup - 2.99$</p>
+                  <p>Tofu Miso Soup - 1.99$</p>
+                  <h4>Salads</h4>
+                  <p>Vege-Sunomono - 3.50$</p>
+                  <p>Damiko House Salad - 13.50$</p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <label class = "carousel--bullet" for = "ci-1"></label>
-          <input type = "radio" name = "carousel-cap-item" id = "ci-2" class = "carousel--bullet"/>
-          <div class = "carousel--item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
-            <label for = "ci-1" class = "carousel--nav carousel--nav-previous"></label>
-            <label for = "ci-3" class = "carousel--nav carousel--nav-next"></label>
-            <div class = "carousel-caption">
-              <h3>Heading 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </section>
+        <section id = "carousels">
+          <h2>Carousel with Caption</h2>
+          <div class = "carousel">
+            <input type = "radio" name = "carousel-cap-item" id = "ci-1" checked = "checked"
+                   class = "carousel--bullet"/>
+            <div class = "carousel--item">
+              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
+              <label for = "ci-4" class = "carousel--nav carousel--nav-previous"></label>
+              <label id = "next" for = "ci-2" class = "carousel--nav carousel--nav-next"></label>
+              <div class = "carousel-caption">
+                <h3>Heading 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
             </div>
-          </div>
-          <label class = "carousel--bullet" for = "ci-2"></label>
-          <input type = "radio" name = "carousel-cap-item" id = "ci-3" class = "carousel--bullet"/>
-          <div class = "carousel--item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
-            <label for = "ci-2" class = "carousel--nav carousel--nav-previous"></label>
-            <label for = "ci-4" class = "carousel--nav carousel--nav-next"></label>
-            <div class = "carousel-caption">
-              <h3>Heading 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <label class = "carousel--bullet" for = "ci-1"></label>
+            <input type = "radio" name = "carousel-cap-item" id = "ci-2" class = "carousel--bullet"/>
+            <div class = "carousel--item">
+              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+              <label for = "ci-1" class = "carousel--nav carousel--nav-previous"></label>
+              <label for = "ci-3" class = "carousel--nav carousel--nav-next"></label>
+              <div class = "carousel-caption">
+                <h3>Heading 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
             </div>
-          </div>
-          <label class = "carousel--bullet" for = "ci-3"></label>
-          <input type = "radio" name = "carousel-cap-item" id = "ci-4" class = "carousel--bullet"/>
-          <div class = "carousel--item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
-            <label for = "ci-3" class = "carousel--nav carousel--nav-previous"></label>
-            <label for = "ci-1" class = "carousel--nav carousel--nav-next"></label>
-            <div class = "carousel-caption">
-              <h3>Heading 4</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <label class = "carousel--bullet" for = "ci-2"></label>
+            <input type = "radio" name = "carousel-cap-item" id = "ci-3" class = "carousel--bullet"/>
+            <div class = "carousel--item">
+              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
+              <label for = "ci-2" class = "carousel--nav carousel--nav-previous"></label>
+              <label for = "ci-4" class = "carousel--nav carousel--nav-next"></label>
+              <div class = "carousel-caption">
+                <h3>Heading 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
             </div>
+            <label class = "carousel--bullet" for = "ci-3"></label>
+            <input type = "radio" name = "carousel-cap-item" id = "ci-4" class = "carousel--bullet"/>
+            <div class = "carousel--item">
+              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
+              <label for = "ci-3" class = "carousel--nav carousel--nav-previous"></label>
+              <label for = "ci-1" class = "carousel--nav carousel--nav-next"></label>
+              <div class = "carousel-caption">
+                <h3>Heading 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <label class = "carousel--bullet" for = "ci-4"></label>
           </div>
-          <label class = "carousel--bullet" for = "ci-4"></label>
-        </div>
 
-        <h2>Carousel with Preview</h2>
-        <div class = "carousel-preview">
-          <input type = "radio" name = "carousel-pr-item" id = "cp-1" checked = "checked"
-                 class = "carousel-preview__bullet"/>
-          <div class = "carousel-preview__item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
-            <label for = "cp-4"
-                   class = "carousel-preview__nav carousel-preview__nav-previous"></label>
-            <label for = "cp-2" class = "carousel-preview__nav carousel-preview__nav-next"></label>
-            <div class = "carousel-caption">
-              <h3>Heading 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <h2>Carousel with Preview</h2>
+          <div class = "carousel-preview">
+            <input type = "radio" name = "carousel-pr-item" id = "cp-1" checked = "checked"
+                   class = "carousel-preview__bullet"/>
+            <div class = "carousel-preview__item">
+              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
+              <label for = "cp-4"
+                     class = "carousel-preview__nav carousel-preview__nav-previous"></label>
+              <label for = "cp-2" class = "carousel-preview__nav carousel-preview__nav-next"></label>
+              <div class = "carousel-caption">
+                <h3>Heading 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
             </div>
+            <label class = "carousel-preview__bullet" for = "cp-1">
+              <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg" alt = "">
+              </div>
+            </label>
+            <input type = "radio" name = "carousel-pr-item" id = "cp-2" class = "carousel-preview__bullet"/>
+            <div class = "carousel-preview__item">
+              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+              <label for = "cp-1"
+                     class = "carousel-preview__nav carousel-preview__nav-previous"></label>
+              <label for = "cp-3" class = "carousel-preview__nav carousel-preview__nav-next"></label>
+              <div class = "carousel-caption">
+                <h3>Heading 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <label class = "carousel-preview__bullet" for = "cp-2">
+              <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" alt = "">
+              </div>
+            </label>
+            <input type = "radio" name = "carousel-pr-item" id = "cp-3" class = "carousel-preview__bullet"/>
+            <div class = "carousel-preview__item">
+              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
+              <label for = "cp-2"
+                     class = "carousel-preview__nav carousel-preview__nav-previous"></label>
+              <label for = "cp-4" class = "carousel-preview__nav carousel-preview__nav-next"></label>
+              <div class = "carousel-caption">
+                <h3>Heading 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <label class = "carousel-preview__bullet" for = "cp-3">
+              <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" alt = "">
+              </div>
+            </label>
+            <input type = "radio" name = "carousel-pr-item" id = "cp-4" class = "carousel-preview__bullet"/>
+            <div class = "carousel-preview__item">
+              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
+              <label for = "cp-3"
+                     class = "carousel-preview__nav carousel-preview__nav-previous"></label>
+              <label for = "cp-1" class = "carousel-preview__nav carousel-preview__nav-next"></label>
+              <div class = "carousel-caption">
+                <h3>Heading 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <label class = "carousel-preview__bullet" for = "cp-4">
+              <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg" alt = "">
+              </div>
+            </label>
           </div>
-          <label class = "carousel-preview__bullet" for = "cp-1">
-            <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg" alt = "">
-            </div>
-          </label>
-          <input type = "radio" name = "carousel-pr-item" id = "cp-2" class = "carousel-preview__bullet"/>
-          <div class = "carousel-preview__item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
-            <label for = "cp-1"
-                   class = "carousel-preview__nav carousel-preview__nav-previous"></label>
-            <label for = "cp-3" class = "carousel-preview__nav carousel-preview__nav-next"></label>
-            <div class = "carousel-caption">
-              <h3>Heading 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <label class = "carousel-preview__bullet" for = "cp-2">
-            <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" alt = "">
-            </div>
-          </label>
-          <input type = "radio" name = "carousel-pr-item" id = "cp-3" class = "carousel-preview__bullet"/>
-          <div class = "carousel-preview__item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
-            <label for = "cp-2"
-                   class = "carousel-preview__nav carousel-preview__nav-previous"></label>
-            <label for = "cp-4" class = "carousel-preview__nav carousel-preview__nav-next"></label>
-            <div class = "carousel-caption">
-              <h3>Heading 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <label class = "carousel-preview__bullet" for = "cp-3">
-            <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" alt = "">
-            </div>
-          </label>
-          <input type = "radio" name = "carousel-pr-item" id = "cp-4" class = "carousel-preview__bullet"/>
-          <div class = "carousel-preview__item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
-            <label for = "cp-3"
-                   class = "carousel-preview__nav carousel-preview__nav-previous"></label>
-            <label for = "cp-1" class = "carousel-preview__nav carousel-preview__nav-next"></label>
-            <div class = "carousel-caption">
-              <h3>Heading 4</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <label class = "carousel-preview__bullet" for = "cp-4">
-            <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg" alt = "">
-            </div>
-          </label>
-        </div>
 
-        <h2>Carousel with Thumb</h2>
-        <div class = "slide-wrapper">
-          <input type = "radio" name = "carousel-item" id = "item-1" class = "bullet" checked = "checked"/>
-          <input type = "radio" name = "carousel-item" id = "item-2" class = "bullet"/>
-          <input type = "radio" name = "carousel-item" id = "item-3" class = "bullet"/>
-          <input type = "radio" name = "carousel-item" id = "item-4" class = "bullet"/>
-          <input type = "radio" name = "carousel-item" id = "item-5" class = "bullet"/>
-          <div class = "slide-wrapper__images">
-            <img class = "slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
-            <img class = "slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
-            <img class = "slide-wrapper__image-item"
-                 src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
-            <img class = "slide-wrapper__image-item"
-                 src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
-            <img class = "slide-wrapper__image-item"
-                 src = "https://mdbootstrap.com/img/Photos/Slides/img%20(75).jpg"/>
-          </div>
-          <div class = "slide-wrapper__indicators">
-            <label class = "slide-wrapper__indicators-item" for = "item-1">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg" width = "120"/>
-            </label>
-            <label class = "slide-wrapper__indicators-item" for = "item-2">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" width = "120"/>
-            </label>
-            <label class = "slide-wrapper__indicators-item" for = "item-3">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" width = "120"/>
-            </label>
-            <label class = "slide-wrapper__indicators-item" for = "item-4">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg" width = "120"/>
-            </label>
-            <label class = "slide-wrapper__indicators-item" for = "item-5">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(75).jpg" width = "120"/>
-            </label>
-          </div>
-        </div>
-
-      </section>
-      <section id = "cart-modal">
-        <h2>Cart Modal</h2>
-        <div class = "wrapper-content">
-          <input type = "checkbox" id = "modal-cart--toggle">
-          <label for = "modal-cart--toggle" class = "btn btn-primary waves-effect fill">Cart Model</label>
-          <div id = "overlay" class = "hide overlay overlay-hugeinc">
-            <div class = "modal-cart-wrapper">
-              <table class = "modal-cart-wrapper__cart">
-                <thead>
-                <th></th>
-                <th>Product</th>
-                <th>Color</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Amount</th>
-                <th></th>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>
-                    <div class = "modal-cart-wrapper__image"><img
-                        src = "https://mdbootstrap.com/img/Photos/Others/shoes.jpg" alt = "">
-                    </div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__description"><h5>Sportswear</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__color">Blue</div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__item-price">200 $</div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__quantity">
-                      <button class = "cart-wrapper__plus-btn waves-effect fill" type = "button" name = "button"></button>
-                      <input name = "modal-cart-wrapper__quantity" value = "2" type = "text">
-                      <button class = "modal-cart-wrapper__minus-btn waves-effect fill" type = "button"
-                              name = "button"></button>
-                    </div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__item-price">400 $</div>
-                  </td>
-                  <td>
-                    <button data-tooltip = "Remove Item" type="button" class ="cart-wrapper__clear-btn"></button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class = "modal-cart-wrapper__image"><img
-                        src = "https://mdbootstrap.com/img/Photos/Others/sweater.jpg" alt = "">
-                    </div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__description"><h5>Sportswear</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__color">Blue</div>
-                  </td>
-                  <td>
-                    <div class = "item-price">300 $</div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__quantity">
-                      <button class = "cart-wrapper__plus-btn waves-effect fill" type = "button" name = "button"></button>
-                      <input name = "modal-cart-wrapper__quantity" value = "2" type = "text">
-                      <button class = "modal-cart-wrapper__minus-btn waves-effect fill" type = "button"
-                              name = "button"></button>
-                    </div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__item-price">600 $</div>
-                  </td>
-                  <td>
-                    <button data-tooltip = "Remove Item" type="button" class ="cart-wrapper__clear-btn"></button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class = "modal-cart-wrapper__image"><img
-                        src = "https://mdbootstrap.com/img/Photos/Others/tie.jpg" alt = "">
-                    </div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__description"><h5>Sportswear</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__color">Blue</div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__item-price">250 $</div>
-                  </td>
-                  <td>
-                    <div class = "modal-cart-wrapper__quantity">
-                      <button class = "cart-wrapper__plus-btn waves-effect fill" type = "button" name = "button"></button>
-                      <input name = "modal-cart-wrapper__quantity" value = "2" type = "text">
-                      <button class = "modal-cart-wrapper__minus-btn waves-effect fill" type = "button"
-                              name = "button"></button>
-                    </div>
-                  </td>
-                  <td>
-                    <div class = "item-price">500 $</div>
-                  </td>
-                  <td>
-                    <button data-tooltip = "Remove Item" type="button" class ="cart-wrapper__clear-btn"></button>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan = "2">
-                    <div class = "checkout">
-                      <input class = "promo-input" type = "text" autocomplete = "off" placeholder = "Promo Code">
-                      <button class = "apply-promo-btn waves-effect fill">apply</button>
-                    </div>
-                  </td>
-                  <td>
-                    <h4><strong>Total</strong></h4>
-                  </td>
-                  <td>
-                    <h4><strong>1500 $</strong></h4>
-                  </td>
-                  <td>
-                    <button type = "button" class = "modal-cart-wrapper_btn waves-effect fill">Complete purchase</button>
-                  </td>
-                  <td>
-                  </td>
-                  <td><label for = "modal-cart--toggle" class = "modal-cart-wrapper_btn--close">Close</label></td>
-                </tr>
-                </tbody>
-              </table>
+          <h2>Carousel with Thumb</h2>
+          <div class = "slide-wrapper">
+            <input type = "radio" name = "carousel-item" id = "item-1" class = "bullet" checked = "checked"/>
+            <input type = "radio" name = "carousel-item" id = "item-2" class = "bullet"/>
+            <input type = "radio" name = "carousel-item" id = "item-3" class = "bullet"/>
+            <input type = "radio" name = "carousel-item" id = "item-4" class = "bullet"/>
+            <input type = "radio" name = "carousel-item" id = "item-5" class = "bullet"/>
+            <div class = "slide-wrapper__images">
+              <img class = "slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
+              <img class = "slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+              <img class = "slide-wrapper__image-item"
+                   src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
+              <img class = "slide-wrapper__image-item"
+                   src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
+              <img class = "slide-wrapper__image-item"
+                   src = "https://mdbootstrap.com/img/Photos/Slides/img%20(75).jpg"/>
+            </div>
+            <div class = "slide-wrapper__indicators">
+              <label class = "slide-wrapper__indicators-item" for = "item-1">
+                <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg" width = "120"/>
+              </label>
+              <label class = "slide-wrapper__indicators-item" for = "item-2">
+                <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" width = "120"/>
+              </label>
+              <label class = "slide-wrapper__indicators-item" for = "item-3">
+                <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" width = "120"/>
+              </label>
+              <label class = "slide-wrapper__indicators-item" for = "item-4">
+                <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg" width = "120"/>
+              </label>
+              <label class = "slide-wrapper__indicators-item" for = "item-5">
+                <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(75).jpg" width = "120"/>
+              </label>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- End Cart Modal -->
-      <section id = "chips">
-        <h2>Chips</h2>
-        <div class = "chip-wrapper">
-          <div class = "chip-wrapper__chip">
-            <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"> John Doe
+
+        </section>
+        <section id = "cart-modal">
+          <h2>Cart Modal</h2>
+          <div class = "wrapper-content">
+            <input type = "checkbox" id = "modal-cart--toggle">
+            <label for = "modal-cart--toggle" class = "btn btn-primary waves-effect fill">Cart Model</label>
+            <div id = "overlay" class = "hide overlay overlay-hugeinc">
+              <div class = "modal-cart-wrapper">
+                <table class = "modal-cart-wrapper__cart">
+                  <thead>
+                  <th></th>
+                  <th>Product</th>
+                  <th>Color</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Amount</th>
+                  <th></th>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+                      <div class = "modal-cart-wrapper__image"><img
+                          src = "https://mdbootstrap.com/img/Photos/Others/shoes.jpg" alt = "">
+                      </div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__description"><h5>Sportswear</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__color">Blue</div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__item-price">200 $</div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__quantity">
+                        <button class = "cart-wrapper__plus-btn waves-effect fill" type = "button"
+                                name = "button"></button>
+                        <input name = "modal-cart-wrapper__quantity" value = "2" type = "text">
+                        <button class = "modal-cart-wrapper__minus-btn waves-effect fill" type = "button"
+                                name = "button"></button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__item-price">400 $</div>
+                    </td>
+                    <td>
+                      <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class = "modal-cart-wrapper__image"><img
+                          src = "https://mdbootstrap.com/img/Photos/Others/sweater.jpg" alt = "">
+                      </div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__description"><h5>Sportswear</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__color">Blue</div>
+                    </td>
+                    <td>
+                      <div class = "item-price">300 $</div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__quantity">
+                        <button class = "cart-wrapper__plus-btn waves-effect fill" type = "button"
+                                name = "button"></button>
+                        <input name = "modal-cart-wrapper__quantity" value = "2" type = "text">
+                        <button class = "modal-cart-wrapper__minus-btn waves-effect fill" type = "button"
+                                name = "button"></button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__item-price">600 $</div>
+                    </td>
+                    <td>
+                      <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class = "modal-cart-wrapper__image"><img
+                          src = "https://mdbootstrap.com/img/Photos/Others/tie.jpg" alt = "">
+                      </div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__description"><h5>Sportswear</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__color">Blue</div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__item-price">250 $</div>
+                    </td>
+                    <td>
+                      <div class = "modal-cart-wrapper__quantity">
+                        <button class = "cart-wrapper__plus-btn waves-effect fill" type = "button"
+                                name = "button"></button>
+                        <input name = "modal-cart-wrapper__quantity" value = "2" type = "text">
+                        <button class = "modal-cart-wrapper__minus-btn waves-effect fill" type = "button"
+                                name = "button"></button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class = "item-price">500 $</div>
+                    </td>
+                    <td>
+                      <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan = "2">
+                      <div class = "checkout">
+                        <input class = "promo-input" type = "text" autocomplete = "off" placeholder = "Promo Code">
+                        <button class = "apply-promo-btn waves-effect fill">apply</button>
+                      </div>
+                    </td>
+                    <td>
+                      <h4><strong>Total</strong></h4>
+                    </td>
+                    <td>
+                      <h4><strong>1500 $</strong></h4>
+                    </td>
+                    <td>
+                      <button type = "button" class = "modal-cart-wrapper_btn waves-effect fill">Complete purchase
+                      </button>
+                    </td>
+                    <td>
+                    </td>
+                    <td><label for = "modal-cart--toggle" class = "modal-cart-wrapper_btn--close">Close</label></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-          <div class = "chip-wrapper__chip">
-            <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"> Maria Kate
+        </section>
+        <!-- End Cart Modal -->
+        <section id = "chips">
+          <h2>Chips</h2>
+          <div class = "chip-wrapper">
+            <div class = "chip-wrapper__chip">
+              <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"> John Doe
+            </div>
+            <div class = "chip-wrapper__chip">
+              <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"> Maria Kate
+            </div>
+            <div class = "chip-wrapper__chip">
+              <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(18).jpg"> Anna Smith
+            </div>
+            <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
+            <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
+            <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
           </div>
-          <div class = "chip-wrapper__chip">
-            <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(18).jpg"> Anna Smith
+        </section>
+        <!-- End Chips -->
+        <section id = "shopCart-table">
+          <h2>Shopping Cart Table</h2>
+          <div class = "cart-wrapper">
+            <table class = "cart-wrapper__cart">
+              <thead>
+              <th></th>
+              <th>Product</th>
+              <th>Color</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Amount</th>
+              <th></th>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <div class = "cart-wrapper__image"><img src = "https://mdbootstrap.com/img/Photos/Others/shoes.jpg"
+                                                          alt = "">
+                  </div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__description"><h5>Sportswear</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__color">Blue</div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__item-price">200 $</div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__quantity">
+                    <button class = "cart-wrapper__plus-btn" type = "button" name = "button"></button>
+                    <input name = "cart-wrapper__quantity" value = "2" type = "text">
+                    <button class = "cart-wrapper__minus-btn" type = "button" name = "button"></button>
+                  </div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__item-price">400 $</div>
+                </td>
+                <td>
+                  <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class = "cart-wrapper__image"><img
+                      src = "https://mdbootstrap.com/img/Photos/Others/sweater.jpg"
+                      alt = "">
+                  </div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__description"><h5>Sportswear</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__color">Blue</div>
+                </td>
+                <td>
+                  <div class = "item-price">300 $</div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__quantity">
+                    <button class = "cart-wrapper__plus-btn" type = "button" name = "button"></button>
+                    <input name = "cart-wrapper__quantity" value = "2" type = "text">
+                    <button class = "cart-wrapper__minus-btn" type = "button" name = "button"></button>
+                  </div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__item-price">600 $</div>
+                </td>
+                <td>
+                  <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class = "cart-wrapper__image"><img src = "https://mdbootstrap.com/img/Photos/Others/tie.jpg"
+                                                          alt = "">
+                  </div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__description"><h5>Sportswear</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__color">Blue</div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__item-price">250 $</div>
+                </td>
+                <td>
+                  <div class = "cart-wrapper__quantity">
+                    <button class = "cart-wrapper__plus-btn" type = "button" name = "button"></button>
+                    <input name = "cart-wrapper__quantity" value = "2" type = "text">
+                    <button class = "cart-wrapper__minus-btn" type = "button" name = "button"></button>
+                  </div>
+                </td>
+                <td>
+                  <div class = "item-price">500 $</div>
+                </td>
+                <td>
+                  <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
+                </td>
+              </tr>
+              <tr>
+                <td colspan = "2">
+                  <div class = "checkout">
+                    <input class = "promo-input" type = "text" autocomplete = "off" placeholder = "Promo Code">
+                    <button class = "apply-promo-btn waves-effect fill">apply</button>
+                  </div>
+                </td>
+                <td>
+                  <h4><strong>Total</strong></h4>
+                </td>
+                <td>
+                  <h4><strong>1500 $</strong></h4>
+                </td>
+                <td colspan = "2">
+                  <button type = "button" class = "btn btn-primary waves-effect fill">Complete purchase</button>
+                </td>
+                <td></td>
+              </tr>
+              </tbody>
+            </table>
           </div>
-          <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
-          <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
-          <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
-        </div>
-      </section>
-      <!-- End Chips -->
-      <section id = "shopCart-table">
-        <h2>Shopping Cart Table</h2>
-        <div class = "cart-wrapper">
-          <table class = "cart-wrapper__cart">
-            <thead>
-            <th></th>
-            <th>Product</th>
-            <th>Color</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Amount</th>
-            <th></th>
-            </thead>
-            <tbody>
-            <tr>
-              <td>
-                <div class = "cart-wrapper__image"><img src = "https://mdbootstrap.com/img/Photos/Others/shoes.jpg"
-                                                        alt = "">
-                </div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__description"><h5>Sportswear</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__color">Blue</div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__item-price">200 $</div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__quantity">
-                  <button class = "cart-wrapper__plus-btn" type = "button" name = "button"></button>
-                  <input name = "cart-wrapper__quantity" value = "2" type = "text">
-                  <button class = "cart-wrapper__minus-btn" type = "button" name = "button"></button>
-                </div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__item-price">400 $</div>
-              </td>
-              <td>
-                <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class = "cart-wrapper__image"><img
-                    src = "https://mdbootstrap.com/img/Photos/Others/sweater.jpg"
-                    alt = "">
-                </div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__description"><h5>Sportswear</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__color">Blue</div>
-              </td>
-              <td>
-                <div class = "item-price">300 $</div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__quantity">
-                  <button class = "cart-wrapper__plus-btn" type = "button" name = "button"></button>
-                  <input name = "cart-wrapper__quantity" value = "2" type = "text">
-                  <button class = "cart-wrapper__minus-btn" type = "button" name = "button"></button>
-                </div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__item-price">600 $</div>
-              </td>
-              <td>
-                <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class = "cart-wrapper__image"><img src = "https://mdbootstrap.com/img/Photos/Others/tie.jpg"
-                                                        alt = "">
-                </div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__description"><h5>Sportswear</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__color">Blue</div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__item-price">250 $</div>
-              </td>
-              <td>
-                <div class = "cart-wrapper__quantity">
-                  <button class = "cart-wrapper__plus-btn" type = "button" name = "button"></button>
-                  <input name = "cart-wrapper__quantity" value = "2" type = "text">
-                  <button class = "cart-wrapper__minus-btn" type = "button" name = "button"></button>
-                </div>
-              </td>
-              <td>
-                <div class = "item-price">500 $</div>
-              </td>
-              <td>
-                <button data-tooltip = "Remove Item" type = "button" class = "cart-wrapper__clear-btn"></button>
-              </td>
-            </tr>
-            <tr>
-              <td colspan = "2">
-                <div class = "checkout">
-                  <input class = "promo-input" type = "text" autocomplete = "off" placeholder = "Promo Code">
-                  <button class = "apply-promo-btn waves-effect fill">apply</button>
-                </div>
-              </td>
-              <td>
-                <h4><strong>Total</strong></h4>
-              </td>
-              <td>
-                <h4><strong>1500 $</strong></h4>
-              </td>
-              <td colspan = "2">
-                <button type = "button" class = "btn btn-primary waves-effect fill">Complete purchase</button>
-              </td>
-              <td></td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <!-- End Shop Cart Table -->
+        </section>
+        <!-- End Shop Cart Table -->
+      </div>
     </div>
   </div>
 </div>
 </body>
 <script src = "js/buttons.js"></script>
+<script src = "js/scrollspy.js"></script>
+<script type = "text/javascript">
+  new ScrollMenu(['#component-nav a'])
+</script>
 </html>

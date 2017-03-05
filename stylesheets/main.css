@@ -290,6 +290,7 @@ a {
   font-size: 2rem; }
 
 #component-nav {
+  position: fixed;
   width: 22.5rem; }
 
 #component-nav ul {
@@ -297,14 +298,20 @@ a {
 
 #component-nav ul li a {
   color: #2E2E2E;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  padding: 1rem;
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s; }
 
+#component-nav a.active {
+  background-color: #e0e0e0;
+  font-weight: bold; }
+
 #component-nav ul li a:hover {
   background-color: #e0e0e0; }
+
+#component-nav ul li:focus > a {
+  font-weight: bold; }
 
 section {
   position: relative;
@@ -355,6 +362,10 @@ code, pre {
   font-size: 1.2rem;
   position: relative; }
 
+.grid__container {
+  position: relative;
+  top: 12rem; }
+
 .wrapper-content {
   text-align: center;
   margin-top: 5rem;
@@ -363,7 +374,11 @@ code, pre {
 #page-header {
   padding: 10px;
   background: #2E2E2E;
-  color: #fff; }
+  color: #fff;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
 
 .accordion {
   border: 1px solid #6D929B;

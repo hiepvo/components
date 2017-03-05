@@ -1,5 +1,9 @@
 #page-header {
-	padding: 10px;
-	background: $elegant-color;
-	color: #fff;
+  padding: 10px;
+  background: $elegant-color;
+  color: #fff;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }

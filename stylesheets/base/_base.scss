@@ -33,6 +33,7 @@ a {
 }
 
 #component-nav {
+  position: fixed;
   width: 22.5rem;
 }
 #component-nav ul {
@@ -40,15 +41,23 @@ a {
 }
 #component-nav ul li a{
   color: $elegant-color;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  padding: 1rem;
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
 
+#component-nav a.active {
+  background-color: $grey-lighten-2;
+  font-weight: bold;
+}
+
 #component-nav ul li a:hover{
   background-color: $grey-lighten-2;
+}
+
+#component-nav ul li:focus > a {
+  font-weight: bold;
 }
 
 section {
@@ -107,6 +116,10 @@ code, pre {
   position: relative;
 }
 
+.grid__container {
+  position: relative;
+  top: 12rem;
+}
 
 .wrapper-content {
   text-align: center;
