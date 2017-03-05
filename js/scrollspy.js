@@ -53,7 +53,7 @@
     if(selector.match(/^#?$/)){
       return 0;
     }
-    return document.querySelector(selector).offsetTop - _header.offsetTop - 1;
+    return document.querySelector(selector).offsetTop - _header.offsetTop;
   };
 
   ScrollMenu.prototype.bindWindowEvents = function(){
@@ -135,7 +135,7 @@
 
   ScrollMenu.prototype.animatePageScroll = function(index){
     var totalOffset = -this.options.activeOffset + this.options.scrollOffset;
-    var newPosition = this.positions[index] - totalOffset;
+    var newPosition = this.positions[index] - totalOffset - (_header.offsetTop - 1);
 
     this.scrollTo(newPosition, this.options.duration);
   };
@@ -149,8 +149,14 @@
     setTimeout(function(){
       var newOffset = this.options.easingFunction(
           increment, this.getScrollOffset(), difference, duration);
+      //window.scroll(0, newOffset);
 
-      window.scroll(0, newOffset);
+      window.scroll({
+        top: newOffset,
+        left: 0,
+        behavior: 'smooth'
+      });
+
 
       if(duration === increment){
         this.updateActiveMenuItem();
