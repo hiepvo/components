@@ -1,0 +1,59 @@
+
+// A full width container for your grid.
+.grid {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+// A 960px width container for your grid.
+.grid--fluid{
+  @extend .grid;
+  max-width: 960px;
+}
+
+// A row for your grid. A row can hold a max of 12 columnsW`
+.grid__row {
+  display: flex;
+
+}
+
+// Create our list of columns (grid__col1 - grid__col12) along with matching offset columns
+@for $i from 1 through 12 {
+   
+   .grid__col#{$i}{
+      width: $i * 8.333%;
+      float: left;
+      padding: 10px;
+      margin: 0 10px;
+      opacity: 0.7;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+   }
+
+    .grid__offset-by-#{$i}{
+      margin-left: $i * 8.333%;
+
+    }
+}
+
+.grid__row--border{
+  border: 1px solid black;
+}
+
+.grid__col--gray-bg{
+  background: #ababab;
+}
+
+.grid__col--center{
+  text-align: center;
+}
