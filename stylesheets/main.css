@@ -365,118 +365,69 @@ code, pre {
   background: #2E2E2E;
   color: #fff; }
 
-/* Container */
 .accordion {
-  color: #2c3e50;
-  background: #ecf0f1;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); }
+  border: 1px solid #6D929B;
+  border-radius: 1rem;
+  width: 60rem;
+  max-width: 60rem;
+  padding: 1rem;
+  margin: 0 auto; }
 
-.accordion h1 {
-  text-align: center; }
-
-.half {
-  float: left;
-  width: 50%;
-  padding: 0 1em; }
-
-.accordion-panel {
-  position: relative;
-  margin-bottom: 1px;
-  width: 100%;
-  color: #fff;
-  overflow: hidden; }
-
-/* Content */
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  background: #fa9b92;
-  -webkit-transition: max-height .35s;
-  -o-transition: max-height .35s;
-  transition: max-height .35s; }
-
-.accordion-content p {
-  margin: 1em; }
-
-.blue .accordion-content {
-  background: #3498db; }
-
-.blue .accordion-content {
-  background: #3498db; }
-
-/* Input */
-.accordion-input {
+.accordion [type="checkbox"] {
   display: none; }
 
-/* :checked */
-.accordion-input:checked ~ .accordion-content {
-  max-height: 10em; }
+.accordion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
-.accordion-input[type=checkbox]:checked + .accordion-toggle::after {
-  transform: rotate(315deg); }
+.accordion ul li {
+  padding: 0;
+  margin: 0; }
 
-.accordion-input[type=radio]:checked + .accordion-toggle::after {
-  transform: rotateX(180deg); }
+.accordion label:hover {
+  color: #C1DAD6; }
 
-/* Icon */
-.blue label::after, .red label::after {
-  position: absolute;
-  right: 0;
-  top: 0;
+.accordion label {
+  height: 4rem;
+  line-height: 4rem;
+  padding-left: 1rem;
+  vertical-align: middle;
   display: block;
-  width: 3em;
-  height: 3em;
-  line-height: 3;
-  text-align: center;
-  -webkit-transition: all .35s;
-  -o-transition: all .35s;
-  transition: all .35s; }
-
-.accordion-input[type=checkbox] + .accordion-toggle::after {
-  content: "+"; }
-
-.accordion-input[type=radio] + .accordion-toggle::after {
-  content: "\25BC"; }
-
-/* Label */
-.blue label, .red label {
-  position: relative;
-  display: block;
-  padding: 0 0 0 1em;
-  font-weight: bold;
-  line-height: 3;
-  cursor: pointer; }
-
-.blue label {
-  background: #2980b9; }
-
-.red label {
-  background: #f7594a; }
-
-.blue .accordion-content {
-  background: #3498db; }
-
-/* Toggle */
-.accordion-toggle {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 100%;
   cursor: pointer;
-  padding: 1rem;
-  margin: 0px;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
-  background-color: #fff;
-  font: inherit;
-  line-height: inherit;
-  text-align: left; }
+  color: #E8D0A9;
+  background-color: #6D929B;
+  font-size: 2rem;
+  -moz-box-shadow: inset 0 -1px #E8D0A9;
+  -webkit-box-shadow: inset 0 -1px #E8D0A9;
+  box-shadow: inset 0 -1px #E8D0A9;
+  text-transform: uppercase; }
 
-.accordion-toggle + * {
-  border-bottom: 1px solid #e5e5e5; }
+.accordion__content {
+  font-size: 1.4rem;
+  background: #F5FAFA;
+  color: #6D929B;
+  max-height: 0;
+  padding: 0 2rem;
+  overflow: hidden;
+  -moz-transition: max-height 1s;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s; }
 
-.accordion-toggle:hover {
-  background: #385670; }
+.accordion [type="checkbox"]:checked ~ label ~ .accordion__content {
+  max-height: 30rem; }
+
+.accordion__content h3 {
+  font-size: 2rem;
+  padding-left: 0;
+  font-weight: 400;
+  color: #ACD1E9; }
+
+.accordion__content h4 {
+  margin-bottom: 0; }
+
+.accordion__content p {
+  padding: 1rem; }
 
 /* ---------- Define Color----------
 - primary-color: #4285F4;
