@@ -273,12 +273,11 @@ html {
 
 body {
   font-size: 1.6em;
-  color: #2E2E2E; }
+  color: #1C2331; }
 
 nav a {
   display: block;
-  margin: 1.6em 0;
-  padding-left: 30px; }
+  padding-left: 3rem; }
 
 .section-content {
   margin: 0 0 30px;
@@ -286,6 +285,26 @@ nav a {
 
 a {
   text-decoration: none; }
+
+#component-nav h2 {
+  font-size: 2rem; }
+
+#component-nav {
+  width: 22.5rem; }
+
+#component-nav ul {
+  width: 100%; }
+
+#component-nav ul li a {
+  color: #2E2E2E;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+
+#component-nav ul li a:hover {
+  background-color: #e0e0e0; }
 
 section {
   position: relative;
@@ -1242,9 +1261,6 @@ code, pre {
   width: 6rem;
   text-align: center; }
 
-.cart-wrapper__quantity {
-  margin-right: 4rem; }
-
 .cart-wrapper__quantity input {
   border: none;
   text-align: center;
@@ -1512,9 +1528,6 @@ code, pre {
   margin-right: 0;
   width: 6rem;
   text-align: center; }
-
-.modal-cart-wrapper__quantity {
-  margin-right: 4rem; }
 
 .modal-cart-wrapper__quantity input {
   border: none;

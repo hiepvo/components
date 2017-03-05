@@ -11,13 +11,12 @@ html {
 
 body {
   font-size: 1.6em;
-  color: $elegant-color;
+  color: $unique-color;
 }
 
 nav a {
   display: block;
-  margin: 1.6em 0;
-  padding-left: 30px;
+  padding-left: 3rem;
 }
 
 .section-content {
@@ -27,6 +26,29 @@ nav a {
 
 a {
   text-decoration: none;
+}
+
+#component-nav h2 {
+  font-size: 2rem;
+}
+
+#component-nav {
+  width: 22.5rem;
+}
+#component-nav ul {
+  width: 100%;
+}
+#component-nav ul li a{
+  color: $elegant-color;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+#component-nav ul li a:hover{
+  background-color: $grey-lighten-2;
 }
 
 section {
