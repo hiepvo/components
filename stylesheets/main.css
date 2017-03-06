@@ -2726,7 +2726,7 @@ code, pre {
   margin: 0; }
 
 .accordion label:hover {
-  color: #C1DAD6; }
+  color: #2E2E2E; }
 
 .accordion label {
   height: 4rem;
@@ -2735,18 +2735,21 @@ code, pre {
   vertical-align: middle;
   display: block;
   cursor: pointer;
-  color: #E8D0A9;
-  background-color: #6D929B;
+  color: #FFFFFF;
+  background-color: #2BBBAD;
   font-size: 2rem;
-  -moz-box-shadow: inset 0 -1px #E8D0A9;
-  -webkit-box-shadow: inset 0 -1px #E8D0A9;
-  box-shadow: inset 0 -1px #E8D0A9;
-  text-transform: uppercase; }
+  -moz-box-shadow: inset 0 -1px #FFFFFF;
+  -webkit-box-shadow: inset 0 -1px #FFFFFF;
+  box-shadow: inset 0 -1px #FFFFFF;
+  text-transform: uppercase;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s; }
 
 .accordion__content {
   font-size: 1.4rem;
   background: #F5FAFA;
-  color: #6D929B;
+  color: #2E2E2E;
   max-height: 0;
   padding: 0 2rem;
   overflow: hidden;
@@ -2754,14 +2757,17 @@ code, pre {
   -webkit-transition: max-height 1s;
   transition: max-height 1s; }
 
+.accordion [type="checkbox"]:checked ~ label {
+  color: #2E2E2E; }
+
 .accordion [type="checkbox"]:checked ~ label ~ .accordion__content {
   max-height: 30rem; }
 
 .accordion__content h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-left: 0;
-  font-weight: 400;
-  color: #ACD1E9; }
+  font-weight: 600;
+  color: #2E2E2E; }
 
 .accordion__content h4 {
   margin-bottom: 0; }
