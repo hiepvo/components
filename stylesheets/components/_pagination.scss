@@ -1,0 +1,64 @@
+.pagination--wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+}
+
+.pagination {
+  display: inline-flex;
+  padding-bottom: 1rem;
+}
+
+.pagination a {
+  color: #292B2C;
+  flex-direction: row;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: rgba(236, 238, 239, 0);
+  -webkit-transition: opacity .3s ease-out, background-color .3s ease-out, color .3s ease-out;
+  -moz-transition: opacity .3s ease-out, background-color .3s ease-out, color .3s ease-out;
+  transition: opacity .3s ease-out, background-color .3s ease-out, color .3s ease-out;
+}
+
+.pagination a.active {
+  border-radius: 2px;
+  color: #FFFFFF;
+}
+
+.pagination a:hover:not(.active) {
+  opacity: 1;
+  background-color: rgba(236, 238, 239, 0.75);
+}
+
+.pagination a:hover {
+  color: #000;
+}
+
+.pagination.active-red .active{
+  background-color: #FF4444;
+}
+
+.pagination.active-default .active{
+  background-color: #4285F4;
+}
+
+.pagination.active-green .active{
+  background-color: #2BBBAD;
+}
+
+.pagination.active-unique .active{
+  background-color: #2E2E2E;
+}
+
+.pagination.active-blue-grey .active{
+  background-color: #3F729B;
+}
+
+.pagination.active-amber .active{
+  background-color: #ff6f00;
+}
+
+.pagination.active-purple .active{
+  background-color: #5e35b1;
+}
+

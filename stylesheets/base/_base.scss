@@ -1,17 +1,18 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
-
-* {
-  box-sizing: border-box;
-}
 
 html {
   font-family: $font_family;
   font-size: 62.5%;
 }
 
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+
 body {
   font-size: 1.6em;
   color: $unique-color;
+  padding-top: 12rem;
 }
 
 nav a {
@@ -118,6 +119,7 @@ code, pre {
 
 .grid__container {
   position: relative;
+  overflow: hidden;
   top: 12rem;
 }
 

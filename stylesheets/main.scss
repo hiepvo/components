@@ -4,6 +4,8 @@
 @import 'layout/_grid.scss';
 @import 'base/_base.scss';
 @import 'base/_header.scss';
+@import '../font-awesome-4.7.0/scss/font-awesome.scss';
+
 
 //Place elements below
 @import 'components/_variables.scss';
@@ -14,7 +16,7 @@
 @import 'components/_carousel_thumb.scss';
 @import 'components/_chips.scss';
 
-@import 'components/_shopping_cart.scss';
 @import 'components/_modal_cart.scss';
-
-
+@import 'components/_shopping_cart.scss';
+@import 'components/_pagination.scss';
+@import 'components/_rotate_cart.scss';
