@@ -230,6 +230,38 @@
             </li>
           </ul>
         </div>
+        <h5>HTML</h5>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+&lt;div class = &quot;accordion&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;input type = &quot;checkbox&quot; id = &quot;appetizers&quot; name = &quot;appetizers&quot;&gt;&lt;label
+        for = &quot;appetizers&quot;&gt;Appetizers&lt;/label&gt;
+      &lt;div class = &quot;accordion__content&quot;&gt;
+        &lt;h3&gt;Check out our tasty apps&lt;/h3&gt;
+        &lt;h4&gt;Happy hour menu - half off!!&lt;/h4&gt;
+        &lt;p&gt;Chicken Wings (6) - 5.99$&lt;/p&gt;
+        &lt;p&gt;Calamari - 7.99$&lt;/p&gt;
+        &lt;p&gt;Garlic breaded pickles - 4.59$&lt;/p&gt;
+        &lt;p&gt;Garlic bread - 5.69$&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type = &quot;checkbox&quot; id = &quot;entrees&quot; name = &quot;entrees&quot;&gt;&lt;label for = &quot;entrees&quot;&gt;Entrees&lt;/label&gt;
+      &lt;div class = &quot;accordion__content&quot;&gt;
+        &lt;h3&gt;Choose from a wide range of pastas, combos and signature dishes&lt;/h3&gt;
+        &lt;h4&gt;Pastas&lt;/h4&gt;
+        &lt;p&gt;Chicken Wings (6) - 5.99$&lt;/p&gt;
+        &lt;p&gt;Calamari - 7.99$&lt;/p&gt;
+        &lt;p&gt;Garlic breaded pickles - 4.59$&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
       </section>
       <!-- End Accordion -->
       <section id = "carousels">
@@ -238,7 +270,7 @@
           <input type = "radio" name = "carousel-cap-item" id = "ci-1" checked = "checked"
                  class = "carousel--bullet"/>
           <div class = "carousel--item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
+            <img src = "images/landscape1.jpeg"/>
             <label for = "ci-4" class = "carousel--nav carousel--nav-previous"></label>
             <label id = "next" for = "ci-2" class = "carousel--nav carousel--nav-next"></label>
             <div class = "carousel-caption">
@@ -249,7 +281,7 @@
           <label class = "carousel--bullet" for = "ci-1"></label>
           <input type = "radio" name = "carousel-cap-item" id = "ci-2" class = "carousel--bullet"/>
           <div class = "carousel--item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+            <img src = "images/landscape2.jpeg"/>
             <label for = "ci-1" class = "carousel--nav carousel--nav-previous"></label>
             <label for = "ci-3" class = "carousel--nav carousel--nav-next"></label>
             <div class = "carousel-caption">
@@ -260,7 +292,7 @@
           <label class = "carousel--bullet" for = "ci-2"></label>
           <input type = "radio" name = "carousel-cap-item" id = "ci-3" class = "carousel--bullet"/>
           <div class = "carousel--item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
+            <img src = "images/landscape3.jpeg"/>
             <label for = "ci-2" class = "carousel--nav carousel--nav-previous"></label>
             <label for = "ci-4" class = "carousel--nav carousel--nav-next"></label>
             <div class = "carousel-caption">
@@ -271,7 +303,7 @@
           <label class = "carousel--bullet" for = "ci-3"></label>
           <input type = "radio" name = "carousel-cap-item" id = "ci-4" class = "carousel--bullet"/>
           <div class = "carousel--item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+            <img src = "images/landscape4.jpeg"/>
             <label for = "ci-3" class = "carousel--nav carousel--nav-previous"></label>
             <label for = "ci-1" class = "carousel--nav carousel--nav-next"></label>
             <div class = "carousel-caption">
@@ -281,13 +313,42 @@
           </div>
           <label class = "carousel--bullet" for = "ci-4"></label>
         </div>
+        <h5>HTML</h5>
+        <pre class = "language-markup">
+            <code class = "language-markup">
+&lt;div class = &quot;carousel&quot;&gt;
+  &lt;input type = &quot;radio&quot; name = &quot;carousel-cap-item&quot; id = &quot;ci-1&quot; checked = &quot;checked&quot; class = &quot;carousel--bullet&quot;/&gt;
+  &lt;div class = &quot;carousel--item&quot;&gt;
+    &lt;img src = &quot;images/landscape1.jpeg&quot;/&gt;
+    &lt;label for = &quot;ci-2&quot; class = &quot;carousel--nav carousel--nav-previous&quot;&gt;&lt;/label&gt;
+    &lt;label id = &quot;next&quot; for = &quot;ci-2&quot; class = &quot;carousel--nav carousel--nav-next&quot;&gt;&lt;/label&gt;
+    &lt;div class = &quot;carousel-caption&quot;&gt;
+      &lt;h3&gt;Heading 1&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;label class = &quot;carousel--bullet&quot; for = &quot;ci-1&quot;&gt;&lt;/label&gt;
+  &lt;input type = &quot;radio&quot; name = &quot;carousel-cap-item&quot; id = &quot;ci-2&quot; class = &quot;carousel--bullet&quot;/&gt;
+  &lt;div class = &quot;carousel--item&quot;&gt;
+    &lt;img src = &quot;images/landscape2.jpeg&quot;/&gt;
+    &lt;label for = &quot;ci-1&quot; class = &quot;carousel--nav carousel--nav-previous&quot;&gt;&lt;/label&gt;
+    &lt;label for = &quot;ci-1&quot; class = &quot;carousel--nav carousel--nav-next&quot;&gt;&lt;/label&gt;
+    &lt;div class = &quot;carousel-caption&quot;&gt;
+      &lt;h3&gt;Heading 2&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;label class = &quot;carousel--bullet&quot; for = &quot;ci-2&quot;&gt;&lt;/label&gt;
+ &lt;/div&gt;
+            </code>
+        </pre>
 
         <h2>Carousel with Preview</h2>
         <div class = "carousel-preview">
           <input type = "radio" name = "carousel-pr-item" id = "cp-1" checked = "checked"
                  class = "carousel-preview__bullet"/>
           <div class = "carousel-preview__item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
+            <img src = "images/landscape5.jpeg"/>
             <label for = "cp-4"
                    class = "carousel-preview__nav carousel-preview__nav-previous"></label>
             <label for = "cp-2" class = "carousel-preview__nav carousel-preview__nav-next"></label>
@@ -297,12 +358,12 @@
             </div>
           </div>
           <label class = "carousel-preview__bullet" for = "cp-1">
-            <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg" alt = "">
+            <div class = "thumb-img"><img src = "images/landscape5.jpeg" alt = "">
             </div>
           </label>
           <input type = "radio" name = "carousel-pr-item" id = "cp-2" class = "carousel-preview__bullet"/>
           <div class = "carousel-preview__item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+            <img src = "images/landscape3.jpeg"/>
             <label for = "cp-1"
                    class = "carousel-preview__nav carousel-preview__nav-previous"></label>
             <label for = "cp-3" class = "carousel-preview__nav carousel-preview__nav-next"></label>
@@ -312,12 +373,12 @@
             </div>
           </div>
           <label class = "carousel-preview__bullet" for = "cp-2">
-            <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" alt = "">
+            <div class = "thumb-img"><img src = "images/landscape3.jpeg" alt = "">
             </div>
           </label>
           <input type = "radio" name = "carousel-pr-item" id = "cp-3" class = "carousel-preview__bullet"/>
           <div class = "carousel-preview__item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
+            <img src = "images/landscape1.jpeg"/>
             <label for = "cp-2"
                    class = "carousel-preview__nav carousel-preview__nav-previous"></label>
             <label for = "cp-4" class = "carousel-preview__nav carousel-preview__nav-next"></label>
@@ -327,12 +388,12 @@
             </div>
           </div>
           <label class = "carousel-preview__bullet" for = "cp-3">
-            <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" alt = "">
+            <div class = "thumb-img"><img src = "images/landscape1.jpeg" alt = "">
             </div>
           </label>
           <input type = "radio" name = "carousel-pr-item" id = "cp-4" class = "carousel-preview__bullet"/>
           <div class = "carousel-preview__item">
-            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+            <img src = "images/landscape2.jpeg"/>
             <label for = "cp-3"
                    class = "carousel-preview__nav carousel-preview__nav-previous"></label>
             <label for = "cp-1" class = "carousel-preview__nav carousel-preview__nav-next"></label>
@@ -342,10 +403,45 @@
             </div>
           </div>
           <label class = "carousel-preview__bullet" for = "cp-4">
-            <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" alt = "">
+            <div class = "thumb-img"><img src = "images/landscape2.jpeg" alt = "">
             </div>
           </label>
         </div>
+        <h5>HTML</h5>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+&lt;div class = &quot;carousel-preview&quot;&gt;
+  &lt;input type = &quot;radio&quot; name = &quot;carousel-pr-item&quot; id = &quot;cp-1&quot; checked = &quot;checked&quot; class = &quot;carousel-preview__bullet&quot;/&gt;
+  &lt;div class = &quot;carousel-preview__item&quot;&gt;
+    &lt;img src = &quot;images/landscape5.jpeg&quot;/&gt;
+    &lt;label for = &quot;cp-2&quot; class = &quot;carousel-preview__nav carousel-preview__nav-previous&quot;&gt;&lt;/label&gt;
+    &lt;label for = &quot;cp-2&quot; class = &quot;carousel-preview__nav carousel-preview__nav-next&quot;&gt;&lt;/label&gt;
+    &lt;div class = &quot;carousel-caption&quot;&gt;
+      &lt;h3&gt;Heading 1&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;label class = &quot;carousel-preview__bullet&quot; for = &quot;cp-1&quot;&gt;
+    &lt;div class = &quot;thumb-img&quot;&gt;&lt;img src = &quot;images/landscape5.jpeg&quot; alt = &quot;&quot;&gt;
+    &lt;/div&gt;
+  &lt;/label&gt;
+  &lt;input type = &quot;radio&quot; name = &quot;carousel-pr-item&quot; id = &quot;cp-2&quot; class = &quot;carousel-preview__bullet&quot;/&gt;
+  &lt;div class = &quot;carousel-preview__item&quot;&gt;
+    &lt;img src = &quot;images/landscape3.jpeg&quot;/&gt;
+    &lt;label for = &quot;cp-1&quot; class = &quot;carousel-preview__nav carousel-preview__nav-previous&quot;&gt;&lt;/label&gt;
+    &lt;label for = &quot;cp-1&quot; class = &quot;carousel-preview__nav carousel-preview__nav-next&quot;&gt;&lt;/label&gt;
+    &lt;div class = &quot;carousel-caption&quot;&gt;
+      &lt;h3&gt;Heading 2&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;label class = &quot;carousel-preview__bullet&quot; for = &quot;cp-2&quot;&gt;
+    &lt;div class = &quot;thumb-img&quot;&gt;&lt;img src = &quot;images/landscape3.jpeg&quot; alt = &quot;&quot;&gt;
+    &lt;/div&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+  </code>
+</pre>
 
         <h2>Carousel with Thumb</h2>
         <div class = "slide-wrapper">
@@ -355,33 +451,51 @@
           <input type = "radio" name = "carousel-item" id = "item-4" class = "bullet"/>
           <input type = "radio" name = "carousel-item" id = "item-5" class = "bullet"/>
           <div class = "slide-wrapper__images">
-            <img class = "slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
-            <img class = "slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
-            <img class = "slide-wrapper__image-item"
-                 src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
-            <img class = "slide-wrapper__image-item"
-                 src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
-            <img class = "slide-wrapper__image-item"
-                 src = "https://mdbootstrap.com/img/Photos/Slides/img%20(75).jpg"/>
+            <img class = "slide-wrapper__image-item" src = "images/landscape1.jpeg"/>
+            <img class = "slide-wrapper__image-item" src = "images/landscape2.jpeg"/>
+            <img class = "slide-wrapper__image-item" src = "images/landscape3.jpeg"/>
+            <img class = "slide-wrapper__image-item" src = "images/landscape4.jpeg"/>
+            <img class = "slide-wrapper__image-item" src = "images/landscape5.jpeg"/>
           </div>
           <div class = "slide-wrapper__indicators">
             <label class = "slide-wrapper__indicators-item" for = "item-1">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg" width = "120"/>
+              <img src = "images/landscape1.jpeg" width = "120"/>
             </label>
             <label class = "slide-wrapper__indicators-item" for = "item-2">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" width = "120"/>
+              <img src = "images/landscape2.jpeg" width = "120"/>
             </label>
             <label class = "slide-wrapper__indicators-item" for = "item-3">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" width = "120"/>
+              <img src = "images/landscape3.jpeg" width = "120"/>
             </label>
             <label class = "slide-wrapper__indicators-item" for = "item-4">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" width = "120"/>
+              <img src = "images/landscape4.jpeg" width = "120"/>
             </label>
             <label class = "slide-wrapper__indicators-item" for = "item-5">
-              <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(75).jpg" width = "120"/>
+              <img src = "images/landscape5.jpeg" width = "120"/>
             </label>
           </div>
         </div>
+        <h5>HTML</h5>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+&lt;div class = &quot;slide-wrapper&quot;&gt;
+  &lt;input type = &quot;radio&quot; name = &quot;carousel-item&quot; id = &quot;item-1&quot; class = &quot;bullet&quot; checked = &quot;checked&quot;/&gt;
+  &lt;input type = &quot;radio&quot; name = &quot;carousel-item&quot; id = &quot;item-2&quot; class = &quot;bullet&quot;/&gt;
+  &lt;div class = &quot;slide-wrapper__images&quot;&gt;
+    &lt;img class = &quot;slide-wrapper__image-item&quot; src = &quot;images/landscape1.jpeg&quot;/&gt;
+    &lt;img class = &quot;slide-wrapper__image-item&quot; src = &quot;images/landscape2.jpeg&quot;/&gt;
+  &lt;/div&gt;
+  &lt;div class = &quot;slide-wrapper__indicators&quot;&gt;
+    &lt;label class = &quot;slide-wrapper__indicators-item&quot; for = &quot;item-1&quot;&gt;
+      &lt;img src = &quot;images/landscape1.jpeg&quot; width = &quot;120&quot;/&gt;
+    &lt;/label&gt;
+    &lt;label class = &quot;slide-wrapper__indicators-item&quot; for = &quot;item-2&quot;&gt;
+      &lt;img src = &quot;images/landscape2.jpeg&quot; width = &quot;120&quot;/&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre>
 
       </section>
       <!-- End Carousels -->
@@ -531,18 +645,36 @@
         <h2>Chips</h2>
         <div class = "chip-wrapper">
           <div class = "chip-wrapper__chip">
-            <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"> John Doe
+            <img src = "images/chip1.jpeg"> John Doe
           </div>
           <div class = "chip-wrapper__chip">
-            <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"> Maria Kate
+            <img src = "images/chip2.jpeg"> Maria Kate
           </div>
           <div class = "chip-wrapper__chip">
-            <img src = "https://mdbootstrap.com/img/Photos/Avatars/img%20(18).jpg"> Anna Smith
+            <img src = "images/chip3.jpeg"> Anna Smith
           </div>
           <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
           <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
           <div class = "chip-wrapper__chip">Tag 1<i class = "chip-wrapper__chip--close"></i></div>
         </div>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+      &lt;div class = &quot;chip-wrapper&quot;&gt;
+          &lt;div class = &quot;chip-wrapper__chip&quot;&gt;
+            &lt;img src = &quot;images/chip1.jpeg&quot;&gt; John Doe
+          &lt;/div&gt;
+          &lt;div class = &quot;chip-wrapper__chip&quot;&gt;
+            &lt;img src = &quot;images/chip2.jpeg&quot;&gt; Maria Kate
+          &lt;/div&gt;
+          &lt;div class = &quot;chip-wrapper__chip&quot;&gt;
+            &lt;img src = &quot;images/chip3.jpeg&quot;&gt; Anna Smith
+          &lt;/div&gt;
+          &lt;div class = &quot;chip-wrapper__chip&quot;&gt;Tag 1&lt;i class = &quot;chip-wrapper__chip--close&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+          &lt;div class = &quot;chip-wrapper__chip&quot;&gt;Tag 1&lt;i class = &quot;chip-wrapper__chip--close&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+          &lt;div class = &quot;chip-wrapper__chip&quot;&gt;Tag 1&lt;i class = &quot;chip-wrapper__chip--close&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+      &lt;/div&gt;
+  </code>
+</pre>
       </section>
       <!-- End Chips -->
       <section id = "shopCart-table">
@@ -676,76 +808,92 @@
         <h2>Pagination</h2>
         <div class = "pagination--wrapper">
           <div class = "pagination active-red">
-            <a class = "waves-effect" href = "#!">&#8592;</a>
-            <a class = "active waves-effect" href = "#!">1</a>
-            <a class = "waves-effect" href = "#!">2</a>
-            <a class = "waves-effect" href = "#!">3</a>
-            <a class = "waves-effect" href = "#!">4</a>
-            <a class = "waves-effect" href = "#!">5</a>
-            <a class = "waves-effect" href = "#!">6</a>
-            <a class = "waves-effect" href = "#!">&#8594;</a>
+            <a class = "waves-effect fill" href = "#!">&#8592;</a>
+            <a class = "active waves-effect fill" href = "#!">1</a>
+            <a class = "waves-effect fill" href = "#!">2</a>
+            <a class = "waves-effect fill" href = "#!">3</a>
+            <a class = "waves-effect fill" href = "#!">4</a>
+            <a class = "waves-effect fill" href = "#!">5</a>
+            <a class = "waves-effect fill" href = "#!">6</a>
+            <a class = "waves-effect fill" href = "#!">&#8594;</a>
           </div>
           <div class = "pagination active-default">
-            <a class = "waves-effect" href = "#!">&#8592;</a>
-            <a class = "active waves-effect" href = "#">1</a>
-            <a class = "waves-effect" href = "#!">2</a>
-            <a class = "waves-effect" href = "#!">3</a>
-            <a class = "waves-effect" href = "#!">4</a>
-            <a class = "waves-effect" href = "#!">5</a>
-            <a class = "waves-effect" href = "#!">6</a>
-            <a class = "waves-effect" href = "#!">&#8594;</a>
+            <a class = "waves-effect fill" href = "#!">&#8592;</a>
+            <a class = "active waves-effect fill" href = "#">1</a>
+            <a class = "waves-effect fill" href = "#!">2</a>
+            <a class = "waves-effect fill" href = "#!">3</a>
+            <a class = "waves-effect fill" href = "#!">4</a>
+            <a class = "waves-effect fill" href = "#!">5</a>
+            <a class = "waves-effect fill" href = "#!">6</a>
+            <a class = "waves-effect fill" href = "#!">&#8594;</a>
           </div>
           <div class = "pagination active-purple">
-            <a class = "waves-effect" href = "#!">&#8592;</a>
-            <a class = "active waves-effect" href = "#!">1</a>
-            <a class = "waves-effect" href = "#!">2</a>
-            <a class = "waves-effect" href = "#!">3</a>
-            <a class = "waves-effect" href = "#!">4</a>
-            <a class = "waves-effect" href = "#!">5</a>
-            <a class = "waves-effect" href = "#!">6</a>
-            <a class = "waves-effect" href = "#!">&#8594;</a>
+            <a class = "waves-effect fill" href = "#!">&#8592;</a>
+            <a class = "active waves-effect fill" href = "#!">1</a>
+            <a class = "waves-effect fill" href = "#!">2</a>
+            <a class = "waves-effect fill" href = "#!">3</a>
+            <a class = "waves-effect fill" href = "#!">4</a>
+            <a class = "waves-effect fill" href = "#!">5</a>
+            <a class = "waves-effect fill" href = "#!">6</a>
+            <a class = "waves-effect fill" href = "#!">&#8594;</a>
           </div>
           <div class = "pagination active-amber">
-            <a class = "waves-effect" href = "">&#8592;</a>
-            <a class = "active waves-effect" href = "">1</a>
-            <a class = "waves-effect" href = "#!">2</a>
-            <a class = "waves-effect" href = "#!">3</a>
-            <a class = "waves-effect" href = "#!">4</a>
-            <a class = "waves-effect" href = "#!">5</a>
-            <a class = "waves-effect" href = "#!">6</a>
-            <a class = "waves-effect" href = "#!">&#8594;</a>
+            <a class = "waves-effect fill" href = "">&#8592;</a>
+            <a class = "active waves-effect fill" href = "">1</a>
+            <a class = "waves-effect fill" href = "#!">2</a>
+            <a class = "waves-effect fill" href = "#!">3</a>
+            <a class = "waves-effect fill" href = "#!">4</a>
+            <a class = "waves-effect fill" href = "#!">5</a>
+            <a class = "waves-effect fill" href = "#!">6</a>
+            <a class = "waves-effect fill" href = "#!">&#8594;</a>
           </div>
           <div class = "pagination active-green">
             <a class = "waves-effect" href = "#!">&#8592;</a>
-            <a class = "active waves-effect" href = "#!">1</a>
-            <a class = "waves-effect" href = "#!">2</a>
-            <a class = "waves-effect" href = "#!">3</a>
-            <a class = "waves-effect" href = "#!">4</a>
-            <a class = "waves-effect" href = "#!">5</a>
-            <a class = "waves-effect" href = "#!">6</a>
-            <a class = "waves-effect" href = "#!">&#8594;</a>
+            <a class = "active waves-effect fill" href = "#!">1</a>
+            <a class = "waves-effect fill" href = "#!">2</a>
+            <a class = "waves-effect fill" href = "#!">3</a>
+            <a class = "waves-effect fill" href = "#!">4</a>
+            <a class = "waves-effect fill" href = "#!">5</a>
+            <a class = "waves-effect fill" href = "#!">6</a>
+            <a class = "waves-effect fill" href = "#!">&#8594;</a>
           </div>
           <div class = "pagination active-blue-grey">
-            <a class = "waves-effect" href = "#!">&#8592;</a>
-            <a class = "active waves-effect" href = "#!">1</a>
-            <a class = "waves-effect" href = "#!">2</a>
-            <a class = "waves-effect" href = "#!">3</a>
-            <a class = "waves-effect" href = "#!">4</a>
-            <a class = "waves-effect" href = "#!">5</a>
-            <a class = "waves-effect" href = "#!">6</a>
-            <a class = "waves-effect" href = "#!">&#8594;</a>
+            <a class = "waves-effect fill" href = "#!">&#8592;</a>
+            <a class = "active waves-effect fill" href = "#!">1</a>
+            <a class = "waves-effect fill" href = "#!">2</a>
+            <a class = "waves-effect fill" href = "#!">3</a>
+            <a class = "waves-effect fill" href = "#!">4</a>
+            <a class = "waves-effect fill" href = "#!">5</a>
+            <a class = "waves-effect fill" href = "#!">6</a>
+            <a class = "waves-effect fill" href = "#!">&#8594;</a>
           </div>
           <div class = "pagination active-unique">
             <a class = "waves-effect" href = "#!">&#8592;</a>
-            <a class = "active waves-effect" href = "#!">1</a>
-            <a class = "waves-effect" href = "#!">2</a>
-            <a class = "waves-effect" href = "#!">3</a>
-            <a class = "waves-effect" href = "#!">4</a>
-            <a class = "waves-effect" href = "#!">5</a>
-            <a class = "waves-effect" href = "#!">6</a>
-            <a class = "waves-effect" href = "#!">&#8594;</a>
+            <a class = "active waves-effect fill" href = "#!">1</a>
+            <a class = "waves-effect fill" href = "#!">2</a>
+            <a class = "waves-effect fill" href = "#!">3</a>
+            <a class = "waves-effect fill" href = "#!">4</a>
+            <a class = "waves-effect fill" href = "#!">5</a>
+            <a class = "waves-effect fill" href = "#!">6</a>
+            <a class = "waves-effect fill" href = "#!">&#8594;</a>
           </div>
         </div>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+&lt;div class = &quot;pagination--wrapper&quot;&gt;
+  &lt;div class = &quot;pagination active-red&quot;&gt;
+    &lt;a class = &quot;waves-effect fill&quot; href = &quot;#!&quot;&gt;&amp;#8592;&lt;/a&gt;
+    &lt;a class = &quot;active waves-effect fill&quot; href = &quot;#!&quot;&gt;1&lt;/a&gt;
+    &lt;a class = &quot;waves-effect fill&quot; href = &quot;#!&quot;&gt;2&lt;/a&gt;
+    &lt;a class = &quot;waves-effect fill&quot; href = &quot;#!&quot;&gt;3&lt;/a&gt;
+    &lt;a class = &quot;waves-effect fill&quot; href = &quot;#!&quot;&gt;4&lt;/a&gt;
+    &lt;a class = &quot;waves-effect fill&quot; href = &quot;#!&quot;&gt;5&lt;/a&gt;
+    &lt;a class = &quot;waves-effect fill&quot; href = &quot;#!&quot;&gt;6&lt;/a&gt;
+    &lt;a class = &quot;waves-effect fill&quot; href = &quot;#!&quot;&gt;&amp;#8594;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre>
       </section>
       <!-- End Pagination -->
       <section id = "rotate-card">
@@ -756,10 +904,10 @@
             <div class = "card-wrapper__rotating">
               <div class = "card-wrapper__front">
                 <div class = "card-wrapper__header">
-                  <img src = "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2859%29.jpg">
+                  <img src = "images/card-bg.jpeg">
                 </div>
                 <div class = "card-wrapper__avatar"><img
-                    src = "https://mdbootstrap.com/img/Photos/Avatars/img%20%289%29.jpg">
+                    src = "images/card-avatar.jpeg">
                 </div>
                 <div class = "card-wrapper__content">
                   <h4>Hiep Vo</h4>
@@ -791,11 +939,58 @@
             </div>
           </label>
         </div>
+        <h5>HTML</h5>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+      &lt;div class = &quot;card-wrapper&quot;&gt;
+          &lt;input type = &quot;checkbox&quot; id = &quot;flip-card&quot; name = &quot;flip-card&quot;&gt;
+          &lt;label&gt;
+            &lt;div class = &quot;card-wrapper__rotating&quot;&gt;
+              &lt;div class = &quot;card-wrapper__front&quot;&gt;
+                &lt;div class = &quot;card-wrapper__header&quot;&gt;
+                  &lt;img src = &quot;images/card-bg.jpeg&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class = &quot;card-wrapper__avatar&quot;&gt;&lt;img
+                    src = &quot;images/card-avatar.jpeg&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class = &quot;card-wrapper__content&quot;&gt;
+                  &lt;h4&gt;Hiep Vo&lt;/h4&gt;
+                  &lt;p&gt;Modern FrontEnd Developer&lt;/p&gt;
+                  &lt;label for = &quot;flip-card&quot; class = &quot;card-wrapper__rotate-btn&quot;&gt;&lt;i class = &quot;fa fa-undo&quot;&gt;&lt;/i&gt; Click here to
+                    rotate&lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class = &quot;card-wrapper__back&quot;&gt;
+                &lt;div class = &quot;card-wrapper__content&quot;&gt;
+                  &lt;h4&gt;About me&lt;/h4&gt;
+                  &lt;hr&gt;
+                  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis
+                    rem amet
+                    repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia
+                    laudantium
+                    quaerat?&lt;/p&gt;
+                  &lt;hr&gt;
+                  &lt;ul class = &quot;card-wrapper__icons&quot;&gt;
+                    &lt;li&gt;&lt;a class = &quot;fb-color fa fa-facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class = &quot;tw-color fa fa-twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a class = &quot;gh-color fa fa-github&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;label for = &quot;flip-card&quot; class = &quot;card-wrapper__rotate-btn&quot;&gt;&lt;i class = &quot;fa fa-undo&quot;&gt;&lt;/i&gt; Click here to
+                    rotate
+                    back&lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/label&gt;
+        &lt;/div&gt;
+  </code>
+</pre>
+
       </section>
       <!-- End Rotating Card -->
       <section id = "tabs">
         <h2>Tab</h2>
-        <div class = "tabComponent">
+        <div class = "tab-component">
           <input type = "radio" id = "tab1" name = "tab" checked><label for = "tab1">Home Decor</label>
           <div class = "content">Browse through our list of Home Decor Items</div>
           <input type = "radio" id = "tab2" name = "tab"><label for = "tab2">Furniture</label>
@@ -806,6 +1001,22 @@
           <div class = "content">Red hot deals at affordable prices. Check out our clearance section for more details.
           </div>
         </div>
+        <h5>HTML</h5>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+      &lt;div class = &quot;tabComponent&quot;&gt;
+          &lt;input type = &quot;radio&quot; id = &quot;tab1&quot; name = &quot;tab&quot; checked&gt;&lt;label for = &quot;tab1&quot;&gt;Home Decor&lt;/label&gt;
+          &lt;div class = &quot;content&quot;&gt;Browse through our list of Home Decor Items&lt;/div&gt;
+          &lt;input type = &quot;radio&quot; id = &quot;tab2&quot; name = &quot;tab&quot;&gt;&lt;label for = &quot;tab2&quot;&gt;Furniture&lt;/label&gt;
+          &lt;div class = &quot;content&quot;&gt;Flash Sale on Living Room and Bedroom Furniture&lt;/div&gt;
+          &lt;input type = &quot;radio&quot; id = &quot;tab3&quot; name = &quot;tab&quot;&gt;&lt;label for = &quot;tab3&quot;&gt;Kitchen&lt;/label&gt;
+          &lt;div class = &quot;content&quot;&gt;Bring the best out of masterchef in you!!&lt;/div&gt;
+          &lt;input type = &quot;radio&quot; id = &quot;tab4&quot; name = &quot;tab&quot;&gt;&lt;label for = &quot;tab4&quot;&gt;Clearance&lt;/label&gt;
+          &lt;div class = &quot;content&quot;&gt;Red hot deals at affordable prices. Check out our clearance section for more details.
+          &lt;/div&gt;
+      &lt;/div&gt;
+  </code>
+</pre>
       </section>
     </div>
   </div>

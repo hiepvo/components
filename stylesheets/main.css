@@ -3410,34 +3410,34 @@ code, pre {
   display: none; }
 
 .slide-wrapper {
-  position: relative;
-  width: 80rem;
   height: 52rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
+  overflow: hidden;
+  position: relative;
   text-align: center;
-  overflow: hidden; }
+  width: 80rem; }
 
 .slide-wrapper__images {
-  width: 420rem;
-  height: 40rem;
-  clear: both;
-  position: relative;
-  -webkit-transition: left 2s;
   -moz-transition: left 2s;
   -o-transition: left 2s;
-  transition: left 2s; }
+  -webkit-transition: left 2s;
+  clear: both;
+  height: 40rem;
+  position: relative;
+  transition: left 2s;
+  width: 420rem; }
 
 .slide-wrapper__images {
   background-size: cover; }
 
 .slide-wrapper__image-item {
   float: left;
+  height: 40rem;
   margin: 0px;
   padding: 0px;
   position: relative;
-  height: 40rem;
   width: 80rem; }
 
 .bullet:nth-of-type(1):checked ~ .slide-wrapper__images {
@@ -3456,30 +3456,33 @@ code, pre {
   left: -320rem; }
 
 .slide-wrapper__indicators {
+  display: inline-block;
+  left: 0;
   position: absolute;
+  text-align: center;
   top: 80%;
-  left: 11%; }
+  width: 100%; }
 
 .slide-wrapper__indicators-item {
-  width: 1rem;
-  height: 1rem;
-  display: inline;
-  cursor: pointer;
-  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-  opacity: 0.5;
-  -webkit-transition: opacity ease-out 0.5s;
   -moz-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.5s; }
+  -webkit-appearance: none;
+  -webkit-transition: opacity ease-out 0.5s;
+  appearance: none;
+  cursor: pointer;
+  display: inline;
+  height: 1rem;
+  opacity: 0.5;
+  transition: opacity ease-out 0.5s;
+  width: 1rem; }
 
 .bullet:nth-of-type(1):checked ~ .slide-wrapper__indicators > label:nth-of-type(1),
 .bullet:nth-of-type(2):checked ~ .slide-wrapper__indicators label:nth-of-type(2),
 .bullet:nth-of-type(3):checked ~ .slide-wrapper__indicators label:nth-of-type(3),
 .bullet:nth-of-type(4):checked ~ .slide-wrapper__indicators label:nth-of-type(4),
 .bullet:nth-of-type(5):checked ~ .slide-wrapper__indicators label:nth-of-type(5) {
-  outline: none;
-  opacity: 1; }
+  opacity: 1;
+  outline: none; }
 
 .chip-wrapper {
   margin-left: auto;
@@ -4090,7 +4093,7 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc {
 
 .pagination a:hover:not(.active) {
   opacity: 1;
-  background-color: rgba(236, 238, 239, 0.75); }
+  background-color: rgba(0, 0, 0, 0.35); }
 
 .pagination a:hover {
   color: #000; }
@@ -4273,25 +4276,25 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc {
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-.tabComponent {
+.tab-component {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-  position: relative;
+  font-size: 1.6rem;
   height: 25rem;
-  font-size: 1.6rem; }
+  position: relative; }
 
-.tabComponent [type=radio] {
+.tab-component [type=radio] {
   display: none; }
 
-.tabComponent label {
-  display: inline-block;
-  margin-right: -5px;
-  font-weight: bold;
-  text-align: center;
+.tab-component label {
   background-color: #55ACEE;
   color: #FFFFFF;
-  width: 15rem;
+  display: inline-block;
+  font-weight: bold;
   height: 4rem;
+  margin-right: -5px;
   padding: 1rem 0;
+  text-align: center;
+  width: 15rem;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   transform: translateY(0);
@@ -4299,33 +4302,33 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc {
   -moz-transition: background-color 0.5s , transform 0.5s, height 1s;
   transition: background-color 0.5s , transform 0.5s, height 1s; }
 
-.tabComponent label:hover {
+.tab-component label:hover {
   background-color: #4B515D;
-  -webkit-transform: translateY(-2rem);
+  cursor: pointer;
   -moz-transform: translateY(-2rem);
-  transform: translateY(-2rem);
-  cursor: pointer; }
+  -webkit-transform: translateY(-2rem);
+  transform: translateY(-2rem); }
 
-.tabComponent .content {
-  position: absolute;
-  top: 5rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.tab-component .content {
   background: #ffffff;
-  padding: 2rem;
+  bottom: 0;
   display: none;
+  left: 0;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 5rem;
   transition: background-color 1s; }
 
-.tabComponent [type=radio]:checked + label {
-  background-color: #4B515D;
-  -webkit-transform: translateY(-2rem);
+.tab-component [type=radio]:checked + label {
   -moz-transform: translateY(-2rem);
+  -webkit-transform: translateY(-2rem);
   transform: translateY(-2rem);
-  height: 6rem;
-  cursor: default; }
+  background-color: #4B515D;
+  cursor: default;
+  height: 6rem; }
 
-.tabComponent [type=radio]:checked + label + .content {
+.tab-component [type=radio]:checked + label + .content {
   display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

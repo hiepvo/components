@@ -1,24 +1,25 @@
-.tabComponent {
+.tab-component {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-  position: relative;
-  height: 25rem;
   font-size: 1.6rem;
+  height: 25rem;
+  position: relative;
 }
 
-.tabComponent [type=radio] {
+.tab-component [type=radio] {
   display: none;
 }
 
-.tabComponent label {
-  display: inline-block;
-  margin-right: -5px;
-  font-weight: bold;
-  text-align: center;
+.tab-component label {
   background-color: $tw-color;
   color: #FFFFFF;
-  width: 15rem;
+  display: inline-block;
+  font-weight: bold;
   height: 4rem;
+  margin-right: -5px;
   padding: 1rem 0;
+  text-align: center;
+  width: 15rem;
+
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   transform: translateY(0);
@@ -28,35 +29,38 @@
 
 }
 
-.tabComponent label:hover {
+.tab-component label:hover {
   background-color: $stylish-color;
-  -webkit-transform: translateY(-2rem);
-  -moz-transform: translateY(-2rem);
-  transform: translateY(-2rem);
   cursor: pointer;
+
+  -moz-transform: translateY(-2rem);
+  -webkit-transform: translateY(-2rem);
+  transform: translateY(-2rem);
 }
 
-.tabComponent .content {
-  position: absolute;
-  top: 5rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.tab-component .content {
   background: #ffffff;
-  padding: 2rem;
+  bottom: 0;
   display: none;
+  left: 0;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 5rem;
   transition: background-color 1s;
 }
 
-.tabComponent [type=radio]:checked + label {
-  background-color: $stylish-color;
-  -webkit-transform: translateY(-2rem);
+.tab-component [type=radio]:checked + label {
   -moz-transform: translateY(-2rem);
+  -webkit-transform: translateY(-2rem);
   transform: translateY(-2rem);
-  height: 6rem;
+
+  background-color: $stylish-color;
   cursor: default;
+  height: 6rem;
+
 }
 
-.tabComponent [type=radio]:checked + label + .content {
+.tab-component [type=radio]:checked + label + .content {
   display: inline-block;
 }
