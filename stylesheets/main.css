@@ -2870,6 +2870,7 @@ code, pre {
   text-align: center;
   cursor: pointer;
   color: #FFFFFF;
+  outline: none;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 9px 0 rgba(0, 0, 0, 0.12);
   -webkit-transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
   -moz-transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
