@@ -3882,6 +3882,9 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc {
   width: 6rem;
   text-align: center; }
 
+.cart-wrapper__quantity {
+  width: 11rem; }
+
 .cart-wrapper__quantity input {
   border: none;
   text-align: center;

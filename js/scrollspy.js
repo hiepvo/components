@@ -96,7 +96,7 @@
   };
 
   ScrollMenu.prototype.getScrollOffset = function(){
-    return document.body.scrollTop|| window.pageYOffset;
+    return document.body.scrollTop || window.pageYOffset;
   };
 
   ScrollMenu.prototype.resetActiveMenuItem = function(){
@@ -117,7 +117,6 @@
     event.preventDefault();
     var index = this.items.indexOf(event.target);
     if(index === -1) return;
-
     this.updateLocationHash(index);
     this.animatePageScroll(index);
   };
@@ -125,6 +124,16 @@
   ScrollMenu.prototype.updateLocationHash = function(index){
     var selector = this.items[index].getAttribute('href');
     var newUrl   = location.pathname + location.search;
+
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+    if(window.location.hash && isChrome){
+      setTimeout(function(){
+        var hash             = window.location.hash;
+        window.location.hash = "";
+        window.location.hash = hash;
+      }, 100);
+    }
 
     if(!selector.match(/^#?$/)){
       newUrl += selector;
@@ -156,7 +165,6 @@
         left: 0,
         behavior: 'smooth'
       });
-
 
       if(duration === increment){
         this.updateActiveMenuItem();
