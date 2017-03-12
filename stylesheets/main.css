@@ -3515,12 +3515,15 @@ code, pre {
 
 .chip-wrapper__chip--close {
   cursor: pointer;
-  font-size: 16px;
-  padding-left: 8px;
+  font-size: 1.6rem;
+  padding-left: 1.4rem;
+  margin-left: 1.4rem;
   opacity: 1;
   -webkit-transition: opacity .5s;
   -moz-transition: opacity .5s;
-  transition: opacity .5s; }
+  transition: opacity .5s;
+  background-image: url("../images/clear_bl.png");
+  background-size: cover; }
 
 .chip-wrapper__chip--close:hover {
   opacity: 0.5; }
