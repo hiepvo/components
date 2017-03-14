@@ -102,211 +102,211 @@
 
 /* ------------- Basic color --------------- */
 .btn-primary {
-  background-color: #4285f4;
+  background-color: $primary-color;
 }
 
 .btn-primary:hover {
-  background-color: #5A95F5;
+  background-color: $primary-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-default {
-  background-color: #2BBBAD;
+  background-color: $default-color;
 }
 
 .btn-default:hover {
-  background-color: #2EC8B9;
+  background-color: $default-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
-  background-color: #aa66cc;
+  background-color: $secondary-color;
 }
 
 .btn-secondary:hover {
-  background-color: #B579D2;
+  background-color: $secondary-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-success {
-  background-color: #00C851;
+  background-color: $success-color;
 }
 
 .btn-success:hover {
-  background-color: #00D255;
+  background-color: $success-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-info {
-  background-color: #33b5e5;
+  background-color: $info-color;
 }
 
 .btn-info:hover {
-  background-color: #49BDE8;
+  background-color:  $info-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-warning {
-  background-color: #eb9316;
+  background-color: $warning-color;
 }
 
 .btn-warning:hover {
-  background-color: #FF961F;
+  background-color: $warning-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-danger {
-  background-color: #c12e2a;
+  background-color: $danger-color;
 }
 
 .btn-danger:hover {
-  background-color: #DB0000;
+  background-color: $danger-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------- Additional buttons ---------- */
 
 .btn-elegant {
-  background-color: #2E2E2E;
+  background-color: $elegant-color;
 }
 
 .btn-elegant:hover {
-  background-color: #3B3B3B;
+  background-color: $elegant-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-unique {
-  background-color: #1C2331;
+  background-color: $unique-color;
 }
 
 .btn-unique:hover {
-  background-color: #252f41;
+  background-color: $unique-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-pink {
-  background-color: #e91e63;
+  background-color: $pink;
 }
 
 .btn-pink:hover {
-  background-color: #EB3573;
+  background-color: $pink-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-purple {
-  background-color: #4a148c;
+  background-color: $purple;
 }
 
 .btn-purple:hover {
-  background-color: #5617A2;
+  background-color: $purple-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-deep-purple {
-  background-color: #311b92;
+  background-color: $deep-purple;
 }
 
 .btn-deep-purple:hover {
-  background-color: #381FA8;
+  background-color: $deep-purple-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-indigo {
-  background-color: #1a237e;
+  background-color: $indigo;
 }
 
 .btn-indigo:hover {
-  background-color: #1E2993;
+  background-color: $indigo-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-cyan {
-  background-color: #00acc1;
+  background-color: $cyan;
 }
 
 .btn-cyan:hover {
-  background-color: #00C2DA;
+  background-color: $cyan-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-light-green {
-  background-color: #7cb342;
+  background-color: $light-green;
 }
 
 .btn-light-green:hover {
-  background-color: #85BA4B;
+  background-color: $light-green-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-lime {
-  background-color: #afb42b;
+  background-color: $lime;
 }
 
 .btn-lime:hover {
-  background-color: #C0C52F;
+  background-color: $lime-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-yellow {
-  background-color: #fbc02d;
+  background-color: $yellow;
 }
 
 .btn-yellow:hover {
-  background-color: #FBC846;
+  background-color: $yellow-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-amber {
-  background-color: #ff6f00;
+  background-color: $amber;
 }
 
 .btn-amber:hover {
-  background-color: #FF7D1A;
+  background-color: $amber-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-orange {
-  background-color: #e65100;
+  background-color: $orange;
 }
 
 .btn-orange:hover {
-  background-color: #FF5A01;
+  background-color: $orange-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-deep-orange {
-  background-color: #bf360c;
+  background-color: $deep-orange;
 }
 
 .btn-deep-orange:hover {
-  background-color: #D73D0E;
+  background-color: $deep-orange-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-brown {
-  background-color: #6d4c41;
+  background-color: $brown;
 }
 
 .btn-brown:hover {
-  background-color: #7D574B;
+  background-color: $brown-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-blue-grey {
-  background-color: #607d8b;
+  background-color: $blue-grey;
 }
 
 .btn-blue-grey:hover {
-  background-color: #6B8A99;
+  background-color: $blue-grey-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-dark-green {
-  background-color: #007E33;
+  background-color: $dark-green;
 }
 
 .btn-dark-green:hover {
-  background-color: #008C38;
+  background-color: $dark-green-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -317,38 +317,38 @@
 }
 
 .btn-fb {
-  background-color: #3B5998;
+  background-color: $fb-color;
 }
 
 .btn-fb:hover {
-  background-color: #4264AA;
+  background-color: $fb-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-tw {
-  background-color: #55ACEE;
+  background-color: $tw-color;
 }
 
 .btn-tw:hover {
-  background-color: #6CB7F0;
+  background-color: $tw-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-gplus {
-  background-color: #DD4B39;
+  background-color: $gplus-color;
 }
 
 .btn-gplus:hover {
-  background-color: #E15F4F;
+  background-color: $gplus-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-li {
-  background-color: #0082CA;
+  background-color: $li-color;
 }
 
 .btn-li:hover {
-  background-color: #0092E4;
+  background-color: $li-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 

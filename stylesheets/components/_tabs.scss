@@ -1,3 +1,7 @@
+.tab-component [type=radio] {
+  display: none;
+}
+
 .tab-component {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   font-size: 1.6rem;
@@ -5,11 +9,7 @@
   position: relative;
 }
 
-.tab-component [type=radio] {
-  display: none;
-}
-
-.tab-component label {
+.tab-component .tab-up {
   background-color: $tw-color;
   color: #FFFFFF;
   display: inline-block;
@@ -29,7 +29,7 @@
 
 }
 
-.tab-component label:hover {
+.tab-component .tab-up:hover {
   background-color: $stylish-color;
   cursor: pointer;
 
@@ -50,7 +50,7 @@
   transition: background-color 1s;
 }
 
-.tab-component [type=radio]:checked + label {
+.tab-component [type=radio]:checked + .tab-up {
   -moz-transform: translateY(-2rem);
   -webkit-transform: translateY(-2rem);
   transform: translateY(-2rem);
@@ -60,7 +60,72 @@
   height: 6rem;
 
 }
-
-.tab-component [type=radio]:checked + label + .content {
+.tab-component [type=radio]:checked + .tab-up + .content {
   display: inline-block;
+}
+
+
+.tab-component .disabled {
+  color: grey;
+  cursor: default;
+  pointer-events: none;
+}
+
+.tab-component .tab-slider, #slider {
+  display: inline-block;
+  margin-right: -5px;
+  font-weight: bold;
+  text-align: center;
+  background-color: $warning-color;
+  width: 15rem;
+  height: auto;
+  padding: 2rem 0;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.tab-component .tab-slider:hover {
+  cursor: pointer;
+}
+
+#slider {
+  background-color: transparent;
+  position: absolute;
+  border-bottom: 3px solid #ffffff;
+  margin: 0px 10px;
+  transition: transform 0.5s;
+  width: 13rem;
+}
+
+.tab-component #r1:checked ~ #slider {
+  transform: translate(-60rem, 0);
+}
+
+.tab-component #r2:checked ~ #slider {
+  transform: translate(-45rem, 0);
+}
+
+.tab-component #r3:checked ~ #slider {
+  transform: translate(-30rem, 0);
+}
+
+.tab-component #r4:checked ~ #slider {
+  transform: translate(-15rem, 0);
+}
+
+.tab-component #r1:checked + .tab-slider + .content,
+.tab-component #r2:checked + .tab-slider + .content,
+.tab-component #r3:checked + .tab-slider + .content,
+.tab-component #r4:checked + .tab-slider + .content{
+  display: inline-block;
+}
+
+.tab-component #r1:checked + .tab-slider,
+.tab-component #r2:checked + .tab-slider,
+.tab-component #r3:checked + .tab-slider,
+.tab-component #r4:checked + .tab-slider{
+  color: #FFFFFF;
 }

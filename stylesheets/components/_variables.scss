@@ -1,6 +1,10 @@
 $font-family: 'Roboto', sans-serif;
 $base-font-size: 10px;
 $primary-color: #4285f4;
+$primary-color-hover: #5A95F5;
+$default-color: #2BBBAD;
+$default-color-hover: #2EC8B9;
+
 $bg--gray: #959595;
 $text--dark-gray: #212121;
 $stylish-color: #4B515D;
@@ -9,6 +13,8 @@ $stylish-color-dark: #3E4551;
 //Contextual Colors
 $success-color: #00C851;
 $success-color-hover: #00D255;
+$secondary-color: #aa66cc;
+$secondary-color-hover: #B579D2;
 $info-color: #33b5e5;
 $info-color-hover: #49BDE8;
 $warning-color: #eb9316;
@@ -21,8 +27,49 @@ $unique-color: #1C2331;
 $unique-color-hover: #252f41;
 $grey-lighten-2: #e0e0e0;
 
+$pink: #e91e63;
+$pink-hover: #EB3573;
+$purple: #4a148c;
+$purple-hover: #5617A2;
+$deep-purple: #311b92;
+$deep-purple-hover: #381FA8;
+$indigo: #1a237e;
+$indigo-hover: #1E2993;
+$cyan: #00acc1;
+$cyan-hover: #00C2DA;
+$light-green: #7cb342;
+$light-green-hover: #85BA4B;
+$lime: #afb42b;
+$lime-hover: #C0C52F;
+$yellow: #fbc02d;
+$yellow-hover: #FBC846;
+
+$amber: #ff6f00;
+$amber-hover: #FF7D1A;
+$orange: #e65100;
+$orange-hover: #FF5A01;
+$deep-orange: #bf360c;
+$deep-orange-hover: #D73D0E;
+$brown: #6d4c41;
+$brown-hover: #7D574B;
+$blue-grey: #607d8b;
+$blue-grey-hover: #6B8A99;
+
+$dark-green: #007E33;
+$dark-green-hover: #008C38;
+
 $tw-color: #55ACEE;
 $tw-color-hover: #6CB7F0;
+
+$fb-color: #3B5998;
+$fb-color-hover: #4264AA;
+
+$gplus-color: #DD4B39;
+$gplus-color-hover: #E15F4F;
+
+$li-color: #0082CA;
+$li-color-hover: #0092E4;
+
 //Badge
 $badge__bg--gray: #ababab;
 $badge__border--gray: #757575;

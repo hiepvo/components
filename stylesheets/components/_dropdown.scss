@@ -1,0 +1,117 @@
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+  width: 24rem;
+  outline: 0;
+  font-size: 1.8rem;
+}
+
+.arrow-down:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  content: "";
+  border-top: .5rem solid;
+  border-right: .5rem solid transparent;
+  border-left: .5rem solid transparent;
+  margin-left: 1rem;
+}
+
+.dropdown-menu:focus {
+  pointer-events: none;
+}
+
+.dropdown-menu:focus .dropdown-menu-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu-content, .dropup-menu-content {
+  pointer-events: auto;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown-menu-content {
+  font-size: 1.6rem;
+  width: 24rem;
+  padding: 1.1rem;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: ease;
+  transition: 0.3s ease;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  position: absolute;
+}
+
+.dropdown-menu-content li{
+  list-style-type: none;
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdown-menu-content a {
+  display: block;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: $unique-color;
+  font-weight: 400;
+  color: inherit;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.dropdown-menu-content a:hover{
+  background-color: $unique-color;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  color: white;
+}
+
+.bg-lime {
+  background-color: $lime;
+}
+
+.bg-lime:hover {
+  background-color: $lime-hover;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-purple:hover {
+  background-color: $purple-hover;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-orange:hover {
+  background-color: $orange-hover;
+}
+
+.bg-deep-orange {
+  background-color: $deep-orange;
+}
+
+.bg-deep-orange:hover {
+  background-color: $deep-orange-hover;
+}
+
+.bg-dark {
+  background-color: $unique-color;
+}
+
+.bg-dark:hover {
+  background-color: $unique-color-hover;
+}
