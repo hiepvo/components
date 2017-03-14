@@ -19,6 +19,7 @@
         <h2>Components</h2>
         <ul>
           <li><a href = "#buttons">Buttons</a></li>
+          <li><a href = "#cb-rb">Checkbox & Radio</a></li>
           <li><a href = "#accordion">Accordion</a></li>
           <li><a href = "#carousels">Carousel</a></li>
           <li><a href = "#cart-modal">Cart Modal</a></li>
@@ -203,6 +204,29 @@
             <label for = "radio-2">Radio Button Selected</label>
           </span>
         </div>
+        <h5>HTML</h5>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+&lt;div class = &quot;cb_rb_group&quot;&gt;
+  &lt;span&gt;
+    &lt;input id = &quot;checkbox-1&quot; type = &quot;checkbox&quot;&gt;
+    &lt;label for = &quot;checkbox-1&quot;&gt; Checkbox&lt;/label&gt;
+  &lt;/span&gt;
+  &lt;span&gt;
+    &lt;input id = &quot;checkbox-2&quot; type = &quot;checkbox&quot; checked&gt;
+    &lt;label for = &quot;checkbox-2&quot;&gt; Checkbox Selected&lt;/label&gt;
+  &lt;/span&gt;
+  &lt;span&gt;
+    &lt;input id = &quot;radio-1&quot; type = &quot;radio&quot;&gt;
+    &lt;label for = &quot;radio-1&quot;&gt;Radio Button&lt;/label&gt;
+  &lt;/span&gt;
+  &lt;span&gt;
+    &lt;input id = &quot;radio-2&quot; type = &quot;radio&quot; checked&gt;
+    &lt;label for = &quot;radio-2&quot;&gt;Radio Button Selected&lt;/label&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+  </code>
+</pre>
       </section>
       <!-- End Checkbox & Radio Button -->
       <section id = "accordion">
@@ -1161,6 +1185,26 @@
           <div class = 'content'>Bring the best out of masterchef in you!!</div>
           <div id = 'slider'></div>
         </div>
+        <h5>HTML</h5>
+        <pre class = "language-markup">
+  <code class = "language-markup">
+    &lt;div class = 'tab-component'&gt;
+      &lt;input type = 'radio' id = 'r1' name = 'tab1' checked&gt;&lt;label class = &quot;tab-slider&quot; for = 'r1'&gt;Home Decor&lt;/label&gt;
+      &lt;div class = 'content'&gt;Browse through our list of Home Decor Items&lt;/div&gt;
+        &lt;input type = 'radio' id = 'r2' name = 'tab1'&gt;
+        &lt;label class = &quot;tab-slider&quot; for = 'r2'&gt;Furniture&lt;/label&gt;
+      &lt;div class = 'content'&gt;Flash Sale on Living Room and Bedroom Furniture&lt;/div&gt;
+        &lt;input type = 'radio' id = 'r3' name = 'tab1'&gt;
+        &lt;label class = &quot;tab-slider disabled&quot; for = 'r3'&gt;Clearance&lt;/label&gt;
+      &lt;div class = 'content'&gt;Red hot deals at affordable prices. Check out our clearance section for more details.
+    &lt;/div&gt;
+      &lt;input type = 'radio' id = 'r4' name = 'tab1'&gt;
+      &lt;label class = &quot;tab-slider&quot; for = 'r4'&gt;Kitchen&lt;/label&gt;
+    &lt;div class = 'content'&gt;Bring the best out of masterchef in you!!&lt;/div&gt;
+      &lt;div id = 'slider'&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  </code>
+</pre>
       </section>
 
     </div>
