@@ -81,6 +81,14 @@
   color: white;
 }
 
+.dropup-menu-content .divider{
+  border: 1px solid $unique-color-hover;
+  padding: 0;
+  opacity: 0.5;
+  margin: 0.5rem 0;
+
+}
+
 .bg-lime {
   background-color: $lime;
 }
