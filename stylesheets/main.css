@@ -4642,62 +4642,6 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc {
 .bg-dark:hover {
   background-color: #252f41; }
 
-.code-reveal {
-  margin: 1rem; }
-  .code-reveal label {
-    align-content: center; }
-  .code-reveal input[type="checkbox"] {
-    display: none; }
-    .code-reveal input[type="checkbox"]:checked ~ .code-container {
-      max-height: 1000px; }
-    .code-reveal input[type="checkbox"]:checked ~ .code-toggle::after {
-      -webkit-transition: all, 0.3s;
-      -moz-transition: all, 0.3s;
-      -ms-transition: all, 0.3s;
-      -o-transition: all, 0.3s;
-      transition: all, 0.3s;
-      transform: rotateX(180deg); }
-  .code-reveal .code-toggle {
-    cursor: pointer;
-    font-size: 2rem;
-    color: #4285f4; }
-    .code-reveal .code-toggle::after {
-      display: inline-block;
-      -webkit-transition: all, 0.5s;
-      -moz-transition: all, 0.5s;
-      -ms-transition: all, 0.5s;
-      -o-transition: all, 0.5s;
-      transition: all, 0.5s;
-      font-family: FontAwesome;
-      margin-left: 5px;
-      content: '\f063'; }
-  .code-reveal .code-container {
-    border-left: 1px solid #4285f4;
-    margin: 1rem;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 0.5rem;
-    -webkit-transition: height, 0.25s;
-    -moz-transition: height, 0.25s;
-    -ms-transition: height, 0.25s;
-    -o-transition: height, 0.25s;
-    transition: height, 0.25s; }
-
-/*
-<div class="code-reveal">
-  <input  id="cr__ELEMENT" type="checkbox">
-  <label for="cr__ELEMENT" class="code-toggle">Show Markup</label>
-  <div class="code-container">
-      <h5>HTML</h5>
-      <pre><code class="language-html">
-
-<!--PREFORMMTED CODE GOES HERE -->
-      
-      </code></pre>
-  </div>
-</div>
-
-*/
 /* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
