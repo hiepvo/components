@@ -53,7 +53,7 @@
     if(selector.match(/^#?$/)){
       return 0;
     }
-    return document.querySelector(selector).offsetTop - _header.offsetTop;
+    return document.querySelector(selector).offsetTop;
   };
 
   ScrollMenu.prototype.bindWindowEvents = function(){
@@ -112,7 +112,6 @@
     }
   };
 
-  var _header                          = document.querySelector("#page-header");
   ScrollMenu.prototype.onMenuItemClick = function(event){
     event.preventDefault();
     var index = this.items.indexOf(event.target);
@@ -144,7 +143,7 @@
 
   ScrollMenu.prototype.animatePageScroll = function(index){
     var totalOffset = -this.options.activeOffset + this.options.scrollOffset;
-    var newPosition = this.positions[index] - totalOffset - (_header.offsetTop - 1);
+    var newPosition = this.positions[index] - totalOffset;
 
     this.scrollTo(newPosition, this.options.duration);
   };
