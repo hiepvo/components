@@ -18,8 +18,10 @@
       <nav id = "component-nav" class = "navbar">
         <h2>Components</h2>
         <ul>
-          <li><a href = "#buttons">Buttons</a></li>
+          <li><a class="active" href = "#buttons">Buttons</a></li>
           <li><a href = "#cb-rb">Checkbox & Radio</a></li>
+          <li><a href = "#foldout-tooltip">Foldout Tooltip</a></li>
+          <li><a href = "#scale-tooltip">Scale Tooltip</a></li>
           <li><a href = "#accordion">Accordion</a></li>
           <li><a href = "#carousels">Carousel</a></li>
           <li><a href = "#cart-modal">Cart Modal</a></li>
@@ -36,7 +38,6 @@
     <div class = "grid__col9">
       <section id = "buttons">
         <h2>Buttons</h2>
-        <article class = "section-content">
           <div class = "wrapper-content">
             <h1>Basic buttons</h1>
             <button class = "btn btn-primary">Primary</button>
@@ -169,7 +170,14 @@
 &lt;button class="btn btn-info waves-effect fill">Info&lt;/button&gt;
 &lt;button class="btn btn-warning waves-effect fill">Warning&lt;/button&gt;
       </code></pre>
-        </article>
+        <div class = "wrapper-content">
+          <h1>Communicate Buttons</h1>
+          <button data-hover = "Accurate?" data-active = "If so, Send" class = "btn btn-primary btn-communicative swing"><span>Primary</span></button>
+          <button data-hover = "Accurate?" data-active = "If so, Send" class = "btn btn-default btn-communicative swing"><span>Default</span></button>
+          <button data-hover = "Accurate?" data-active = "If so, Send" class = "btn btn-secondary btn-communicative swing"><span>Secondary</span></button>
+          <button data-hover = "Accurate?" data-active = "If so, Send" class = "btn btn-success btn-communicative swing"><span>Success</span></button>
+          <button data-hover = "Accurate?" data-active = "If so, Send" class = "btn btn-danger btn-communicative swing"><span>danger</span></button>
+        </div>
       </section>
       <!-- End Buttons -->
       <section id = "cb-rb">
@@ -214,6 +222,25 @@
       </code></pre>
       </section>
       <!-- End Checkbox & Radio Button -->
+      <section id = "foldout-tooltip">
+        <h2>Foldout Tooltip</h2>
+        <div class = "foldout-wrapper">
+          <div class="foldout-wrapper__title">Projects</div>
+          <div>
+            <div class="foldout-wrapper__content waves-effect ring">This is tooltip sentence</div>
+          </div>
+          <div>
+            <div class="foldout-wrapper__content waves-effect fill">This is tooltip sentence</div>
+          </div>
+        </div>
+      </section>
+      <section style="height: 40rem;" id="scale-tooltip">
+        <h2>Tooltip Scale From Corner</h2>
+        <div class = "wrapper-content">
+        <button class = "btn btn-primary btn-tooltip-scale">Projects<span><div
+            class = "tooltip-content">This is a text</div></span></button>
+        </div>
+      </section>
       <section id = "accordion">
         <h2>Accordion</h2>
         <div class = "accordion">

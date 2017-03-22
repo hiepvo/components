@@ -12,54 +12,15 @@ html {
 body {
   font-size: 1.6em;
   color: $unique-color;
-  padding-top: 12rem;
+  margin-top: 8rem;
 }
 
-nav a {
-  display: block;
-  padding-left: 3rem;
-}
 
 .section-content {
   margin: 0 0 30px;
   font-weight: 300;
 }
 
-a {
-  text-decoration: none;
-}
-
-#component-nav h2 {
-  font-size: 2rem;
-}
-
-#component-nav {
-  position: fixed;
-  width: 22.5rem;
-}
-#component-nav ul {
-  width: 100%;
-}
-#component-nav ul li a{
-  color: $elegant-color;
-  padding: 1rem;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
-
-#component-nav a.active {
-  background-color: $grey-lighten-2;
-  font-weight: bold;
-}
-
-#component-nav ul li a:hover{
-  background-color: $grey-lighten-2;
-}
-
-#component-nav ul li:focus > a {
-  font-weight: bold;
-}
 
 section {
   position: relative;
@@ -68,6 +29,13 @@ section {
   border-radius: 4px;
   margin-bottom: 5rem;
   padding: 2rem;
+}
+
+.anchor:before {
+  display: block;
+  content: " ";
+  margin-top: -8rem;
+  height: 14rem;
 }
 
 h3 {
@@ -127,4 +95,11 @@ code, pre {
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.anchor {
+  display: block;
+  height: 10rem; /*same height as header*/
+  margin-top: -10rem; /*same height as header*/
+  visibility: hidden;
 }

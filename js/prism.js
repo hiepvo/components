@@ -930,7 +930,7 @@ Prism.languages.scss['atrule'].inside.rest = Prism.util.clone(Prism.languages.sc
 			}
 		};
 
-		script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js';
+		script.src = 'js/clipboard.min.js';
 		head.appendChild(script);
 	}
 

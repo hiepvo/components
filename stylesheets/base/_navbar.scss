@@ -1,0 +1,43 @@
+
+nav a {
+  display: block;
+  padding-left: 3rem;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+#component-nav h2 {
+  font-size: 2rem;
+}
+
+#component-nav {
+  position: fixed;
+  width: 22.5rem;
+}
+#component-nav ul {
+  width: 100%;
+}
+#component-nav ul li a{
+  position: relative;
+  color: $elegant-color;
+  padding: 1rem;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+#component-nav a.active {
+  background-color: $grey-lighten-2;
+  font-weight: bold;
+}
+
+#component-nav ul li a:hover{
+  background-color: $grey-lighten-2;
+}
+
+#component-nav ul li:focus > a {
+  font-weight: bold;
+}
