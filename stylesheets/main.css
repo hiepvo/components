@@ -3177,15 +3177,15 @@ a {
 
 .btn-communicative:before,
 .btn-communicative:after {
-  -moz-transition: .4s,opacity .2s;
-  -o-transition: .4s,opacity .2s;
-  -webkit-transition: .4s,opacity .2s;
+  -moz-transition: .4s, opacity .2s;
+  -o-transition: .4s, opacity .2s;
+  -webkit-transition: .4s, opacity .2s;
   content: '';
   left: 0;
   opacity: 0;
   position: absolute;
   text-align: center;
-  transition: .4s,opacity .4s;
+  transition: .4s, opacity .4s;
   width: 100%; }
 
 .btn-communicative:before {
@@ -3276,68 +3276,70 @@ a {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
 /* -------- tooltip scale from corner ----------*/
-.btn-tooltip-scale {
-  position: relative; }
+.parent {
+  height: 50px;
+  margin: 0 auto;
+  width: 150px; }
 
-.btn-tooltip-scale .tooltip-content {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 0.5s 0.2s;
-  -moz-transition: opacity 0.5s 0.2s;
-  -ms-transition: opacity 0.5s 0.2s;
-  -o-transition: opacity 0.5s 0.2s;
-  transition: opacity 0.5s 0.2s; }
-
-.btn-tooltip-scale span {
-  position: absolute;
-  width: 15px;
-  height: 15px;
+.sibling {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  line-height: 30px;
   top: 0;
-  right: 0;
-  background-color: #33b5e5;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -ms-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s;
-  -webkit-transition: height 0.75s .5s, width 0.5s;
-  -moz-transition: height 0.75s .5s, width 0.5s;
-  -ms-transition: height 0.75s .5s, width 0.5s;
-  -o-transition: height 0.75s .5s, width 0.5s;
-  transition: height 0.75s .5s, width 0.5s; }
+  left: 0; }
 
-.btn-tooltip-scale:hover span {
-  width: 100%;
-  height: 20rem;
-  opacity: 0.85; }
+.child {
+  background-color: transparent;
+  height: 15px;
+  left: 6px;
+  position: relative;
+  top: -56px;
+  width: 15px;
+  z-index: 1;
+  float: right; }
 
-.btn-tooltip-scale:hover .tooltip-content {
+.tt-scale-wrapper__content {
+  color: #FFFFFF;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  padding: 0.5rem;
+  text-align: left;
+  line-height: 2rem; }
+
+.child img {
+  background-size: cover;
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+  width: 15px; }
 
-.btn-tooltip-scale:not(:hover) .tooltip-content {
+.child:hover {
+  background-color: #33b5e5;
+  height: 25rem;
+  width: 150px;
+  -webkit-transition: height 0.5s .5s, width 0.5s;
+  -moz-transition: height 0.5s .5s, width 0.5s;
+  -ms-transition: height 0.5s .5s, width 0.5s;
+  -o-transition: height 0.5s .5s, width 0.5s;
+  transition: height 0.5s .5s, width 0.5s; }
+
+.child:hover img {
   opacity: 0;
   visibility: hidden; }
 
-.btn-tooltip-scale:hover span:after {
-  content: none; }
+.child:hover .tt-scale-wrapper__content {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s 0.75s;
+  -moz-transition: opacity 0.5s 0.75s;
+  -ms-transition: opacity 0.5s 0.75s;
+  -o-transition: opacity 0.5s 0.75s;
+  transition: opacity 0.5s 0.75s; }
 
-.btn-tooltip-scale span:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0px;
-  right: auto;
-  top: auto;
-  bottom: -7px;
-  border: 7px solid;
-  border-color: transparent transparent transparent #33b5e5; }
+.child:not(:hover) .tt-scale-wrapper__content {
+  opacity: 0;
+  visibility: hidden; }
 
 .cb_rb_group {
   padding-bottom: 2rem;
@@ -3436,11 +3438,11 @@ a {
   -ms-transform-origin: 20rem -164rem;
   -o-transform-origin: 20rem -164rem;
   transform-origin: 20rem -164rem;
-  -webkit-transition: 1s ease-out;
-  -moz-transition: 1s ease-out;
-  -ms-transition: 1s ease-out;
-  -o-transition: 1s ease-out;
-  transition: 1s ease-out; }
+  -webkit-transition: transform 1s ease-out;
+  -moz-transition: transform 1s ease-out;
+  -ms-transition: transform 1s ease-out;
+  -o-transition: transform 1s ease-out;
+  transition: transform 1s ease-out; }
 
 .foldout-wrapper > div:nth-of-type(2) {
   width: 20rem;
@@ -3496,11 +3498,11 @@ a {
   -o-transform: rotate(7deg);
   -webkit-transform: rotate(7deg);
   transform: rotate(7deg);
-  -moz-transition: 1s ease-out;
-  -ms-transition: 1s ease-out;
-  -o-transition: 1s ease-out;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out; }
+  -moz-transition: transform 1s ease-out;
+  -ms-transition: transform 1s ease-out;
+  -o-transition: transform 1s ease-out;
+  -webkit-transition: transform 1s ease-out;
+  transition: transform 1s ease-out; }
 
 .foldout-wrapper:hover > div:nth-of-type(2),
 .foldout-wrapper:hover > div:nth-of-type(2) .foldout-wrapper__content,

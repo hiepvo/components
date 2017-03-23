@@ -43,11 +43,11 @@
   -o-transform-origin: 20rem -164rem;
   transform-origin: 20rem -164rem;
 
-  -webkit-transition: 1s ease-out;
-  -moz-transition: 1s ease-out;
-  -ms-transition: 1s ease-out;
-  -o-transition: 1s ease-out;
-  transition: 1s ease-out;
+  -webkit-transition: transform 1s ease-out;
+  -moz-transition: transform 1s ease-out;
+  -ms-transition: transform 1s ease-out;
+  -o-transition: transform 1s ease-out;
+  transition: transform 1s ease-out;
 
 }
 
@@ -112,11 +112,11 @@
   -webkit-transform: rotate(7deg);
   transform: rotate(7deg);
 
-  -moz-transition: 1s ease-out;
-  -ms-transition: 1s ease-out;
-  -o-transition: 1s ease-out;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
+  -moz-transition: transform 1s ease-out;
+  -ms-transition: transform 1s ease-out;
+  -o-transition: transform 1s ease-out;
+  -webkit-transition: transform 1s ease-out;
+  transition: transform 1s ease-out;
 }
 
 .foldout-wrapper:hover > div:nth-of-type(2),

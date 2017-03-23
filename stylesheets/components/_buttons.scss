@@ -142,7 +142,7 @@
 }
 
 .btn-info:hover {
-  background-color:  $info-color-hover;
+  background-color: $info-color-hover;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -388,7 +388,7 @@
 .waves-effect--ring {
   position: absolute;
   background-color: transparent;
-  border: 3px solid rgba(255, 255, 255, 0.5) ;
+  border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 100%;
   opacity: 0.5;
 
@@ -424,7 +424,6 @@
   transform: scale(10);
 }
 
-
 /* ------------ communicative button effect -------- */
 .btn-communicative {
   position: relative;
@@ -459,15 +458,15 @@
 
 .btn-communicative:before,
 .btn-communicative:after {
-  -moz-transition: .4s,opacity .2s;
-  -o-transition: .4s,opacity .2s;
-  -webkit-transition: .4s,opacity .2s;
+  -moz-transition: .4s, opacity .2s;
+  -o-transition: .4s, opacity .2s;
+  -webkit-transition: .4s, opacity .2s;
   content: '';
   left: 0;
   opacity: 0;
   position: absolute;
   text-align: center;
-  transition: .4s,opacity .4s;
+  transition: .4s, opacity .4s;
   width: 100%;
 }
 
@@ -506,6 +505,7 @@
 .btn-communicative:active {
   background-color: #33b5e5;
 }
+
 .btn-communicative:active:before {
   -webkit-transform: translate(-100%, 0);
   -moz-transform: translate(-100%, 0);
@@ -520,156 +520,144 @@
 
 /* --------- swing keyframes ---------*/
 
-.swing:hover
-{
+.swing:hover {
   -webkit-animation: swing 1s ease;
   animation: swing 1s ease;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
 
-@-webkit-keyframes swing
-{
-  15%
-  {
+@-webkit-keyframes swing {
+  15% {
     -webkit-transform: translateX(4px);
     transform: translateX(4px);
   }
-  30%
-  {
+  30% {
     -webkit-transform: translateX(-4px);
     transform: translateX(-4px);
   }
-  50%
-  {
+  50% {
     -webkit-transform: translateX(2px);
     transform: translateX(2px);
   }
-  65%
-  {
+  65% {
     -webkit-transform: translateX(-2px);
     transform: translateX(-2px);
   }
-  80%
-  {
+  80% {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
-  100%
-  {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes swing
-{
-  15%
-  {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px);
-  }
-  30%
-  {
-    -webkit-transform: translateX(-4px);
-    transform: translateX(-4px);
-  }
-  50%
-  {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-  65%
-  {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px);
-  }
-  80%
-  {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px);
-  }
-  100%
-  {
+  100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  30% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  65% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  80% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 
 /* -------- tooltip scale from corner ----------*/
-.btn-tooltip-scale {
+.parent {
+  height:50px;
+  margin: 0 auto;
+  width:150px;
+}
+
+
+.sibling{
   position: relative;
-}
-
-.btn-tooltip-scale .tooltip-content {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 0.5s 0.2s;
-  -moz-transition: opacity 0.5s 0.2s;
-  -ms-transition: opacity 0.5s 0.2s;
-  -o-transition: opacity 0.5s 0.2s;
-  transition: opacity 0.5s 0.2s;
-}
-
-.btn-tooltip-scale span {
-  position: absolute;
-  width: 15px;
-  height: 15px;
+  width:150px;
+  height:50px;
+  line-height: 30px;
   top: 0;
-  right: 0;
-  background-color: $info-color;
-
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -ms-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s;
-
-  -webkit-transition: height 0.75s .5s, width 0.5s;
-  -moz-transition: height 0.75s .5s, width 0.5s;
-  -ms-transition: height 0.75s .5s, width 0.5s;
-  -o-transition: height 0.75s .5s, width 0.5s;
-  transition: height 0.75s .5s, width 0.5s;
-
-
+  left: 0;
 }
 
-.btn-tooltip-scale:hover span {
-  width: 100%;
-  height: 20rem;
-  opacity: 0.85;
+
+.child {
+  background-color: transparent;
+  height: 15px;
+  left: 6px;
+  position: relative;
+  top: -56px;
+  width:15px;
+  z-index: 1;
+  float: right;
 }
 
-.btn-tooltip-scale:hover .tooltip-content {
 
+.tt-scale-wrapper__content {
+  color: #FFFFFF;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  padding: 0.5rem;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.child  img {
+  background-size: cover;
   opacity: 1;
   visibility: visible;
-
+  width:15px;
 }
 
-.btn-tooltip-scale:not(:hover) .tooltip-content{
+.child:hover {
+  background-color: $info-color;
+  height: 25rem;
+  width: 150px;
+  -webkit-transition: height 0.5s .5s, width 0.5s;
+  -moz-transition: height 0.5s .5s, width 0.5s;
+  -ms-transition: height 0.5s .5s, width 0.5s;
+  -o-transition: height 0.5s .5s, width 0.5s;
+  transition: height 0.5s .5s, width 0.5s;
+}
+
+.child:hover img {
   opacity: 0;
   visibility: hidden;
 }
 
-.btn-tooltip-scale:hover span:after {
-  content: none;
+.child:hover .tt-scale-wrapper__content {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s 0.75s;
+  -moz-transition: opacity 0.5s 0.75s;
+  -ms-transition: opacity 0.5s 0.75s;
+  -o-transition: opacity 0.5s 0.75s;
+  transition: opacity 0.5s 0.75s;
 }
 
-.btn-tooltip-scale span:after{
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0px;
-  right: auto;
-  top: auto;
-  bottom: -7px;
-  border: 7px solid;
-  border-color: transparent transparent transparent $info-color;
+
+.child:not(:hover) .tt-scale-wrapper__content {
+  opacity: 0;
+  visibility: hidden;
 }
+
+
