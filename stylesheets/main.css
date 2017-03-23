@@ -4770,6 +4770,11 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc {
   outline: 0;
   font-size: 1.8rem; }
 
+.dropdown-menu {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
 .arrow-down:after {
   display: inline-block;
   width: 0;
@@ -4872,6 +4877,11 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc {
   font-size: 1.8rem;
   outline: 0;
   width: 24rem; }
+
+.dropup-menu {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
 
 .arrow-up::after {
   border-left: .5rem solid transparent;

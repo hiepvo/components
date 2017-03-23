@@ -6,6 +6,12 @@
   width: 24rem;
 }
 
+.dropup-menu {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .arrow-up::after {
   border-left: .5rem solid transparent;
   border-right: .5rem solid transparent;
