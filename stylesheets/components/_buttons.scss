@@ -582,14 +582,14 @@
 }
 
 /* -------- tooltip scale from corner ----------*/
-.parent {
+.tt-scale-wrapper {
   height:50px;
   margin: 0 auto;
   width:150px;
 }
 
 
-.sibling{
+.tt-scale-wrapper__button{
   position: relative;
   width:150px;
   height:50px;
@@ -599,7 +599,7 @@
 }
 
 
-.child {
+.tt-scale-wrapper__icon {
   background-color: transparent;
   height: 15px;
   left: 6px;
@@ -621,14 +621,14 @@
   line-height: 2rem;
 }
 
-.child  img {
+.tt-scale-wrapper__icon  img {
   background-size: cover;
   opacity: 1;
   visibility: visible;
   width:15px;
 }
 
-.child:hover {
+.tt-scale-wrapper__icon:hover {
   background-color: $info-color;
   height: 25rem;
   width: 150px;
@@ -639,12 +639,12 @@
   transition: height 0.5s .5s, width 0.5s;
 }
 
-.child:hover img {
+.tt-scale-wrapper__icon:hover img {
   opacity: 0;
   visibility: hidden;
 }
 
-.child:hover .tt-scale-wrapper__content {
+.tt-scale-wrapper__icon:hover .tt-scale-wrapper__content {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.5s 0.75s;
@@ -655,7 +655,7 @@
 }
 
 
-.child:not(:hover) .tt-scale-wrapper__content {
+.tt-scale-wrapper__icon:not(:hover) .tt-scale-wrapper__content {
   opacity: 0;
   visibility: hidden;
 }

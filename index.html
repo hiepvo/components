@@ -180,9 +180,15 @@
                   class = "btn btn-secondary btn-communicative swing"><span>Secondary</span></button>
           <button data-hover = "Accurate?" data-active = "If so, Send"
                   class = "btn btn-success btn-communicative swing"><span>Success</span></button>
-          <button data-hover = "Accurate?" data-active = "If so, Send" class = "btn btn-danger btn-communicative swing">
-            <span>danger</span></button>
+          <button data-hover = "Accurate?" data-active = "If so, Send" class = "btn btn-danger btn-communicative swing"><span>danger</span></button>
         </div>
+        <pre><code class = "language-html">
+&lt;button data-hover=&quot;Accurate?&quot; data-active=&quot;If so, Send&quot; class=&quot;btn btn-primary btn-communicative swing&quot;&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;
+&lt;button data-hover=&quot;Accurate?&quot; data-active=&quot;If so, Send&quot; class=&quot;btn btn-default btn-communicative swing&quot;&gt;&lt;span&gt;Default&lt;/span&gt;&lt;/button&gt;
+&lt;button data-hover=&quot;Accurate?&quot; data-active=&quot;If so, Send&quot; class=&quot;btn btn-secondary btn-communicative swing&quot;&gt;&lt;span&gt;Secondary&lt;/span&gt;&lt;/button&gt;
+&lt;button data-hover=&quot;Accurate?&quot; data-active=&quot;If so, Send&quot; class=&quot;btn btn-success btn-communicative swing&quot;&gt;&lt;span&gt;Success&lt;/span&gt;&lt;/button&gt;
+&lt;button data-hover=&quot;Accurate?&quot; data-active=&quot;If so, Send&quot; class=&quot;btn btn-danger btn-communicative swing&quot;&gt;&lt;span&gt;danger&lt;/span&gt;&lt;/button&gt;
+      </code></pre>
       </section>
       <!-- End Buttons -->
       <section id = "cb-rb">
@@ -229,29 +235,37 @@
       <!-- End Checkbox & Radio Button -->
       <section id = "foldout-tooltip">
         <h2>Foldout Tooltip</h2>
-        <div class = "foldout-wrapper">
-          <div class = "foldout-wrapper__title">Projects</div>
+        <div class="foldout-wrapper">
+          <div class="foldout-wrapper__title">Projects</div>
           <div>
-            <div class = "foldout-wrapper__content waves-effect ring">This is tooltip sentence</div>
+            <div class="foldout-wrapper__content waves-effect ring">This is tooltip sentence</div>
           </div>
           <div>
-            <div class = "foldout-wrapper__content waves-effect fill">This is tooltip sentence</div>
+            <div class="foldout-wrapper__content waves-effect fill">This is tooltip sentence</div>
           </div>
         </div>
+        <pre><code class = "language-html">
+&lt;div class=&quot;foldout-wrapper&quot;&gt;
+  &lt;div class=&quot;foldout-wrapper__title&quot;&gt;Projects&lt;/div&gt;
+  &lt;div&gt;&lt;div class=&quot;foldout-wrapper__content waves-effect ring&quot;&gt;This is tooltip sentence&lt;/div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;div class=&quot;foldout-wrapper__content waves-effect fill&quot;&gt;This is tooltip sentence&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+      </code></pre>
       </section>
       <section style = "height: 40rem;" id = "scale-tooltip">
         <h2>Tooltip Scale From Corner</h2>
         <div class = "wrapper-content">
-          <!--
           <div class="tt-scale-wrapper">
-            <button class = "btn btn-primary tt-scale-wrapper__icon">Projects</button>
-            <span><div class = "tt-scale-wrapper__content">This is a text</div></span>
-          </div>-->
-          <div class="parent">
-            <div class="btn btn-elegant sibling waves-effect fill">Projects</div>
-            <div class="child"><img src="images/ic_info.png"><div class = "tt-scale-wrapper__content">Lorem ipsum dolor, consectetur adipiscing elit. Donec metus orci. Aliquam commodo, faucibus sem nec, consequat mauris. Quisque tempus pretium dolor vitae tincidunt.</div></div>
+            <div class="btn btn-elegant tt-scale-wrapper__button waves-effect fill">Projects</div>
+            <div class="tt-scale-wrapper__icon"><img src="images/ic_info.png"><div class = "tt-scale-wrapper__content">Lorem ipsum dolor, consectetur adipiscing elit. Donec metus orci. Aliquam commodo, faucibus sem nec, consequat mauris. Quisque tempus pretium dolor vitae tincidunt.</div></div>
           </div>
         </div>
+        <pre><code class = "language-html">
+&lt;div class=&quot;tt-scale-wrapper&quot;&gt;
+  &lt;div class=&quot;btn btn-elegant tt-scale-wrapper__button waves-effect fill&quot;&gt;Projects&lt;/div&gt;
+  &lt;div class=&quot;tt-scale-wrapper__icon&quot;&gt;&lt;img src=&quot;images/ic_info.png&quot;&gt;&lt;div class=&quot;tt-scale-wrapper__content&quot;&gt;Lorem ipsum dolor, consectetur adipiscing elit. Donec metus orci. Aliquam commodo, faucibus sem nec, consequat mauris. Quisque tempus pretium dolor vitae tincidunt.&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+      </code></pre>
       </section>
       <section id = "accordion">
         <h2>Accordion</h2>
