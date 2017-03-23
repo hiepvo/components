@@ -1,9 +1,8 @@
 
-.dropup-menu {
+.dropup-menu-wrapper {
   display: inline-block;
   font-size: 1.8rem;
   outline: 0;
-  position: relative;
   width: 24rem;
 }
 
@@ -20,15 +19,13 @@
   width: 0;
 }
 
-
 .dropup-menu:focus {
   pointer-events: none;
 }
 
-.dropup-menu:focus .dropup-menu-content {
+.dropup-menu:focus + .dropup-menu-content {
   opacity: 1;
   visibility: visible;
-  bottom: 100%;
 }
 
 .dropup-menu-content {
@@ -39,20 +36,23 @@
 }
 
 .dropup-menu-content {
-  bottom: 100%;
-  -moz-transition: 0.3s ease;
-  -o-transition: ease;
-  -webkit-transition: 0.3s ease;
+  bottom: 78%;
+
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  -moz-transition: opacity 0.3s, visibility 0.3s;
+  -ms-transition: opacity 0.3s, visibility 0.3s;
+  -o-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   font-size: 1.6rem;
   padding: 1.1rem;
   position: absolute;
-  transition: 0.3s ease;
+
   width: 24rem;
   z-index: 2;
-
 }
 
 .dropup-menu-content li {
