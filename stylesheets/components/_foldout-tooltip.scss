@@ -43,11 +43,11 @@
   -o-transform-origin: 20rem -164rem;
   transform-origin: 20rem -164rem;
 
-  -webkit-transition: transform 1s ease-out;
-  -moz-transition: transform 1s ease-out;
-  -ms-transition: transform 1s ease-out;
-  -o-transition: transform 1s ease-out;
-  transition: transform 1s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform .5s ease-out;
+  -ms-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
 
 }
 
@@ -63,6 +63,7 @@
   -ms-transform: rotate(7deg);
   -o-transform: rotate(7deg);
   transform: rotate(7deg);
+
 }
 
 .foldout-wrapper > div:nth-of-type(2) .foldout-wrapper__content {
@@ -88,18 +89,18 @@
   overflow: hidden;
 }
 
-.foldout-wrapper > div:nth-of-type(3) .foldout-wrapper__content {
+.foldout-wrapper > div:nth-of-type(3) div {
   width: 20rem;
   height: 6rem;
   position: absolute;
   right: 0;
   top: 0;
-  background: $warning-color;
+  background: $unique-color;
 }
 
 
 .foldout-wrapper> div:nth-of-type(3),
-.foldout-wrapper > div:nth-of-type(3) .foldout-wrapper__content {
+.foldout-wrapper > div:nth-of-type(3) div {
   -moz-transform-origin: 0 -164rem;
   -ms-transform-origin: 0 -164rem;
   -o-transform-origin: 0 -164rem;
@@ -112,17 +113,28 @@
   -webkit-transform: rotate(7deg);
   transform: rotate(7deg);
 
-  -moz-transition: transform 1s ease-out;
-  -ms-transition: transform 1s ease-out;
-  -o-transition: transform 1s ease-out;
-  -webkit-transition: transform 1s ease-out;
-  transition: transform 1s ease-out;
+  -moz-transition: transform .5s ease-out;
+  -ms-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  -webkit-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+.foldout-wrapper:hover > div:nth-of-type(2),
+.foldout-wrapper:hover > div:nth-of-type(2) .foldout-wrapper__content{
+  width: 40rem;
+  z-index: 1;
+  -webkit-transition: transform 0.5s ease-out, width 0.5s ease-out;
+  -moz-transition: transform .5s ease-out, width 0.5s ease-out;
+  -ms-transition: transform .5s ease-out, width 0.5s ease-out;
+  -o-transition: transform .5s ease-out, width 0.5s ease-out;
+  transition: transform .5s ease-out, width 0.5s ease-out;
 }
 
 .foldout-wrapper:hover > div:nth-of-type(2),
 .foldout-wrapper:hover > div:nth-of-type(2) .foldout-wrapper__content,
 .foldout-wrapper:hover > div:nth-of-type(3),
-.foldout-wrapper:hover > div:nth-of-type(3) .foldout-wrapper__content {
+.foldout-wrapper:hover > div:nth-of-type(3) div {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
