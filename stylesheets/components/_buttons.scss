@@ -94,7 +94,7 @@
   cursor: pointer;
   color: #FFFFFF;
   outline: none;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 9px 0 rgba(0, 0, 0, 0.12);
+  @include box-shadow;
   -webkit-transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
   -moz-transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
   transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
@@ -107,7 +107,7 @@
 
 .btn-primary:hover {
   background-color: $primary-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-default {
@@ -116,7 +116,7 @@
 
 .btn-default:hover {
   background-color: $default-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-secondary {
@@ -125,7 +125,7 @@
 
 .btn-secondary:hover {
   background-color: $secondary-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-success {
@@ -134,7 +134,7 @@
 
 .btn-success:hover {
   background-color: $success-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-info {
@@ -143,7 +143,7 @@
 
 .btn-info:hover {
   background-color: $info-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-warning {
@@ -152,7 +152,7 @@
 
 .btn-warning:hover {
   background-color: $warning-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-danger {
@@ -161,7 +161,7 @@
 
 .btn-danger:hover {
   background-color: $danger-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 /* ----------------- Additional buttons ---------- */
@@ -172,7 +172,7 @@
 
 .btn-elegant:hover {
   background-color: $elegant-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-unique {
@@ -181,7 +181,7 @@
 
 .btn-unique:hover {
   background-color: $unique-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-pink {
@@ -190,7 +190,7 @@
 
 .btn-pink:hover {
   background-color: $pink-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-purple {
@@ -199,7 +199,7 @@
 
 .btn-purple:hover {
   background-color: $purple-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-deep-purple {
@@ -208,7 +208,7 @@
 
 .btn-deep-purple:hover {
   background-color: $deep-purple-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-indigo {
@@ -217,7 +217,7 @@
 
 .btn-indigo:hover {
   background-color: $indigo-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-cyan {
@@ -226,7 +226,7 @@
 
 .btn-cyan:hover {
   background-color: $cyan-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-light-green {
@@ -235,7 +235,7 @@
 
 .btn-light-green:hover {
   background-color: $light-green-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-lime {
@@ -244,7 +244,7 @@
 
 .btn-lime:hover {
   background-color: $lime-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-yellow {
@@ -253,7 +253,7 @@
 
 .btn-yellow:hover {
   background-color: $yellow-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-amber {
@@ -262,7 +262,7 @@
 
 .btn-amber:hover {
   background-color: $amber-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-orange {
@@ -271,7 +271,7 @@
 
 .btn-orange:hover {
   background-color: $orange-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-deep-orange {
@@ -280,7 +280,7 @@
 
 .btn-deep-orange:hover {
   background-color: $deep-orange-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-brown {
@@ -289,7 +289,7 @@
 
 .btn-brown:hover {
   background-color: $brown-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-blue-grey {
@@ -298,7 +298,7 @@
 
 .btn-blue-grey:hover {
   background-color: $blue-grey-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-dark-green {
@@ -307,7 +307,7 @@
 
 .btn-dark-green:hover {
   background-color: $dark-green-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 /* ------------Social buttons----------------------*/
@@ -322,7 +322,7 @@
 
 .btn-fb:hover {
   background-color: $fb-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-tw {
@@ -331,7 +331,7 @@
 
 .btn-tw:hover {
   background-color: $tw-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-gplus {
@@ -340,7 +340,7 @@
 
 .btn-gplus:hover {
   background-color: $gplus-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 .btn-li {
@@ -349,7 +349,7 @@
 
 .btn-li:hover {
   background-color: $li-color-hover;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  @include box-shadow-hover;
 }
 
 /* ---------------- shaping ----------------------*/
