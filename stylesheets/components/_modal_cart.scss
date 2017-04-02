@@ -352,8 +352,8 @@
 .overlay-hugeinc {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-  transition: opacity 0.5s, visibility 0s 0.5s;
+  -webkit-transition: opacity ease-out 0.5s, visibility ease-out 0s 0.5s;
+  transition: opacity ease-out 0.5s, visibility ease-out 0s 0.5s;
 }
 
 input#modal-cart--toggle:checked ~ .overlay-hugeinc .modal-cart-wrapper {
@@ -363,8 +363,8 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc .modal-cart-wrapper {
 input#modal-cart--toggle:checked ~ .overlay-hugeinc {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity ease-out 0.5s;
+  transition: opacity ease-out 0.5s;
 }
 
 .overlay-hugeinc div {

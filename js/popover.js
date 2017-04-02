@@ -3,15 +3,12 @@
  */
 (function(){
   var init = {};
-
   var links  = document.querySelectorAll('.popover-text');
   var closes = document.querySelectorAll('.s-close');
-
   for(var i = 0; i < links.length; i++){
     links[i].addEventListener('click', openSlideOver, false);
     closes[i].addEventListener('click', closeSlideOver, false);
   }
-
   function clearPopup(){
     var popups = document.querySelectorAll('.popover');
     var i      = 0;
@@ -24,72 +21,57 @@
       }
     }
   }
-
   function closeSlideOver(e){
     var el             = e.target;
     var contentWrapper = el.parentNode;
     var content        = contentWrapper.children[0];
-    var caption        = contentWrapper.nextElementSibling;
-    hide(contentWrapper.parentNode, 0);
-    removeClass(contentWrapper.parentNode, 'swing');
+    removeClass(contentWrapper.parentNode, 'popout');
     removeClass(contentWrapper, 'animated-height');
     removeClass(content, 'popover__content--visible');
     addClass(content, 'popover__content--invisible');
-    removeClass(caption, 'swing');
+
+    hide(contentWrapper.parentNode, 500);
 
   }
-
   function openSlideOver(){
     clearPopup()
-
     var animatedHeight = document.querySelector('#' + this.htmlFor + ' .popover__content');
     var content        = document.querySelector('#' + this.htmlFor + ' .popover__content>div');
-
     var el = document.getElementById(this.htmlFor);
-
     placeEl(el, this.offsetLeft, this.offsetTop - 10);
     show(el, 0);
     addClass(animatedHeight, 'animated-height');
-    addClass(el, 'swing');
+    addClass(el, 'popout');
     removeClass(content, 'popover__content--invisible');
     addClass(content, 'popover__content--visible');
-
   }
-
   //place element in specific cords
   function placeEl(el, x_pos, y_pos){
-
     el.style.left = x_pos - el.offsetWidth / 3 + 'px';
     el.style.top  = y_pos + 'px';
   }
-
   function hide(el, time){
     setTimeout(function(){
       addClass(el, 'hide');
     }, time);
   }
-
   function show(el, time){
     setTimeout(function(){
       removeClass(el, 'hide');
     }, time);
   }
-
   /*********** Helpers ***************/
-
   function hasClass(el, className){
     if(el.classList)
       return el.classList.contains(className);
     else
       return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
   }
-
   function addClass(el, className){
     if(el.classList)
       el.classList.add(className);
     else if(!hasClass(el, className)) el.className += " " + className
   }
-
   function removeClass(el, className){
     if(el.classList)
       el.classList.remove(className);
@@ -98,10 +80,7 @@
       el.className = el.className.replace(reg, ' ')
     }
   }
-
   /*-------------------------------*/
-
   window.init = init;
-
 })(window);
 

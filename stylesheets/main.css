@@ -1,50 +1,67 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 
 body {
-  line-height: 1; }
+  margin: 0;
+  font: 16px/1 sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
 
-ol, ul {
-  list-style: none; }
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0; }
 
-blockquote, q {
-  quotes: none; }
+main,
+li {
+  display: block; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+strong {
+  font-weight: bold; }
+
+a,
+button {
+  color: inherit;
+  transition: .3s; }
+
+a {
+  text-decoration: none; }
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
@@ -340,6 +357,7 @@ code, pre {
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
+/*************** Mixin *****************/
 #page-header {
   background: #2E2E2E;
   color: #fff;
@@ -3518,19 +3536,15 @@ a {
   text-align: left;
   visibility: hidden; }
 
-.tt-scale span {
+.tt-scale .vertical,
+.tt-scale .horizontal {
   position: absolute;
   width: 15px;
   height: 15px;
   top: 0;
   right: 0;
   background-color: #33b5e5;
-  z-index: 10; }
-
-.tt-scale:hover span {
-  width: 100%;
-  height: 20rem;
-  opacity: 0.85;
+  z-index: 10;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -ms-transition: transform 0.5s;
@@ -3541,6 +3555,16 @@ a {
   -ms-transition: height 0.5s, width 0.5s;
   -o-transition: height 0.5s, width 0.5s;
   transition: height 0.5s, width 0.5s; }
+
+.tt-scale:hover .vertical {
+  opacity: 0.85;
+  width: 100%;
+  height: 20rem; }
+
+.tt-scale:hover .horizontal {
+  opacity: 0.85;
+  width: 25rem;
+  height: 6rem; }
 
 .tt-scale:hover .tt-content {
   opacity: 1;
@@ -3575,7 +3599,18 @@ a {
 
 .popover {
   position: absolute;
-  width: 300px; }
+  width: 30rem;
+  -webkit-transform: translateZ(0);
+  -webkit-transform: scale(0.94);
+  -moz-transform: scale(0.94);
+  -ms-transform: scale(0.94);
+  -o-transform: scale(0.94);
+  transform: scale(0.94);
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s; }
 
 .s-icon {
   width: 5px;
@@ -3589,8 +3624,8 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   background-image: url("../images/ic_close.png");
   background-size: cover;
   cursor: pointer;
@@ -3598,17 +3633,24 @@ a {
 
 .s-close:hover {
   opacity: 0.35;
-  -webkit-transition: opacity 0.15s;
-  -moz-transition: opacity 0.15s;
-  -ms-transition: opacity 0.15s;
-  -o-transition: opacity 0.15s;
-  transition: opacity 0.15s; }
+  -webkit-transition: opacity ease-out 0.15s;
+  -moz-transition: opacity ease-out 0.15s;
+  -ms-transition: opacity ease-out 0.15s;
+  -o-transition: opacity ease-out 0.15s;
+  transition: opacity ease-out 0.15s; }
 
 .popover-text {
   position: relative;
   cursor: pointer;
   color: #61AFDE;
   font-weight: bold; }
+
+.popover__content h3 {
+  margin: 0;
+  padding: 0; }
+
+.popover__content p {
+  margin: 1.2rem; }
 
 .popover__content {
   display: inline-block;
@@ -3620,27 +3662,27 @@ a {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   background-color: #EDECEA;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 2rem;
   white-space: normal;
   box-sizing: border-box;
-  border-top: 4px solid #C0BFBD;
+  border-top: 6px solid #C0BFBD;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 9px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 9px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 9px 0 rgba(0, 0, 0, 0.12); }
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 9px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: max-height 500ms cubic-bezier(0.19, 1, 0.22, 1) 220ms;
+  -moz-transition: max-height 500ms cubic-bezier(0.19, 1, 0.22, 1) 220ms;
+  -o-transition: max-height 500ms cubic-bezier(0.19, 1, 0.22, 1) 220ms;
+  transition: max-height 500ms cubic-bezier(0.19, 1, 0.22, 1) 220ms;
+  /* easeOutExpo */ }
 
 .popover__content > div {
   font-size: 16px;
-  padding: 0.5rem 1rem 1rem 1rem; }
+  padding: 1.6rem 1.2rem 1.2rem 1.2rem; }
 
 .animated-height {
-  max-height: 30rem;
-  -webkit-transition: max-height 500ms cubic-bezier(0.19, 1, 0.22, 1) 150ms;
-  -moz-transition: max-height 500ms cubic-bezier(0.19, 1, 0.22, 1) 150ms;
-  -o-transition: max-height 500ms cubic-bezier(0.19, 1, 0.22, 1) 150ms;
-  transition: max-height 500ms cubic-bezier(0.19, 1, 0.22, 1) 150ms;
-  /* easeOutExpo */ }
+  max-height: 30rem; }
 
 .popover__header {
   padding-bottom: 1rem;
@@ -3655,45 +3697,37 @@ a {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 9px 0 rgba(0, 0, 0, 0.12);
   color: white;
   display: block;
-  height: 3rem;
+  height: 3.8rem;
   left: 0;
-  line-height: 3rem;
+  line-height: 3.8rem;
   position: absolute;
   text-align: center;
   width: 100%;
   z-index: 100; }
 
 .popover__content .popover__content--invisible {
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: opacity 350ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: opacity 350ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: opacity 350ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 350ms cubic-bezier(0.19, 1, 0.22, 1);
+  /* easeOutExpo */ }
 
 .popover__content--visible {
   opacity: 1;
-  -webkit-transition: opacity ease-out 0.35s .20s;
-  -moz-transition: opacity ease-out 0.35s .20s;
-  -ms-transition: opacity ease-out 0.35s .20s;
-  -o-transition: opacity ease-out 0.35s .20s;
-  transition: opacity ease-out 0.35s .20s; }
+  -webkit-transition-delay: 350ms;
+  -moz-transition-delay: 350ms;
+  -ms-transition-delay: 350ms;
+  -o-transition-delay: 350ms;
+  transition-delay: 350ms; }
 
-.swing {
-  -webkit-animation: swing 0.35s ease-out;
-  animation: swing 0.35s ease-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1; }
+.popout {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
 
-@-webkit-keyframes swing {
-  0% {
-    -webkit-transform: scale(0.94);
-    transform: scale(0.94); }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-@keyframes swing {
-  0% {
-    -webkit-transform: scale(0.94);
-    transform: scale(0.94); }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
 .hide {
   position: absolute !important;
   top: -9999px !important;
@@ -4403,8 +4437,8 @@ a {
 .overlay-hugeinc {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-  transition: opacity 0.5s, visibility 0s 0.5s; }
+  -webkit-transition: opacity ease-out 0.5s, visibility ease-out 0s 0.5s;
+  transition: opacity ease-out 0.5s, visibility ease-out 0s 0.5s; }
 
 input#modal-cart--toggle:checked ~ .overlay-hugeinc .modal-cart-wrapper {
   transform: translateY(2%); }
@@ -4412,8 +4446,8 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc .modal-cart-wrapper {
 input#modal-cart--toggle:checked ~ .overlay-hugeinc {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s; }
+  -webkit-transition: opacity ease-out 0.5s;
+  transition: opacity ease-out 0.5s; }
 
 .overlay-hugeinc div {
   -moz-perspective: 1000px; }

@@ -257,13 +257,23 @@
         <h2>Tooltip Scale From Corner</h2>
         <div class = "wrapper-content">
           <button class="btn btn-primary tt-scale">Projects
-            <span><div class="tt-content">Lorem ipsum, consectetur adipiscing elit. Donec metus orci. faucibus sem nec. Quisque tempus pretium dolor vitae tincidunt.</div>
+            <span class="vertical"><div class="tt-content">Lorem ipsum, consectetur adipiscing elit. Donec metus orci. faucibus sem nec. Quisque tempus pretium dolor vitae tincidunt.</div>
+            </span>
+          </button>
+
+          <button class="btn btn-primary tt-scale">Projects
+            <span class="horizontal"><div class="tt-content">Lorem ipsum, consectetur adipiscing elit. Donec metus orci.</div>
             </span>
           </button>
         </div>
         <pre><code class = "language-html">
  &lt;button class=&quot;btn btn-primary tt-scale&quot;&gt;Projects
-  &lt;span&gt;&lt;div class=&quot;tt-content&quot;&gt;Lorem ipsum, consectetur adipiscing elit. Donec metus orci. Aliquam commodo, faucibus sem nec, consequat mauris. Quisque tempus pretium dolor vitae tincidunt.&lt;/div&gt;
+  &lt;span class="vertical"&gt;&lt;div class=&quot;tt-content&quot;&gt;Lorem ipsum, consectetur adipiscing elit. Donec metus orci. Aliquam commodo, faucibus sem nec, consequat mauris. Quisque tempus pretium dolor vitae tincidunt.&lt;/div&gt;
+  &lt;/span&gt;
+ &lt;/button&gt;
+
+&lt;button class=&quot;btn btn-primary tt-scale&quot;&gt;Projects
+  &lt;span class="horizontal"&gt;&lt;div class=&quot;tt-content&quot;&gt;Lorem ipsum, consectetur adipiscing elit. Donec metus orci. Aliquam commodo, faucibus sem nec, consequat mauris. Quisque tempus pretium dolor vitae tincidunt.&lt;/div&gt;
   &lt;/span&gt;
  &lt;/button&gt;
       </code></pre>
@@ -271,18 +281,18 @@
       <section id="popover">
        <h2>Pop Over</h2>
         <div class="popover-wrapper">
-          <div>Albert Einstein (14 March 1879 - 18 April 1955) was a German-born theoretical physicist. He developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). Einstein’s work is also know for its influence on the philosophy of science. Einstein is best know in popular culture of his mass-energy equivalence formula E = mc2 (which has been dubbed “the world’s most famous equation”). He received the 1921 <label for="po2" class="popover-text">Nobel Prize<span class="s-icon"></span></label> in Physics “for his services to theoretical physics, and especially for his discovery of the law.</div><br>
-        <div><label for="po1" class="popover-text">Lorem ipsum<span class="s-icon"></span></label> dolor si eiusmod tempor incididunt eiusmod tempor incididunt ut labore et ut labore et eiusmod tempor incididunt eiusmod tempor incididunt ut labore et ut labore et eiusmod tempor incididunt eiusm tempor incididunt ut labore et ut labore eiusmod tempor eiusmod tempor incididunt ut labore et ut labore ett amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt eiusmod tempor incididunt ut labore et ut labore et aliqua. Ut enim ad minim adipiscing elit, sed do eiusmod tempor incididunt ut labore et </div>
+          <p>Albert Einstein (14 March 1879 - 18 April 1955) was a German-born theoretical physicist. He developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). Einstein’s work is also know for its influence on the philosophy of science. Einstein is best know in popular culture of his mass-energy equivalence formula E = mc2 (which has been dubbed “the world’s most famous equation”). He received the 1921 <label for="po2" class="popover-text">Nobel Prize<span class="s-icon"></span></label> in Physics “for his services to theoretical physics, and especially for his discovery of the law.</p><br>
+        <p><label for="po1" class="popover-text">Lorem ipsum<span class="s-icon"></span></label> dolor si eiusmod tempor incididunt eiusmod tempor incididunt ut labore et ut labore et eiusmod tempor incididunt eiusmod tempor incididunt ut labore et ut labore et eiusmod tempor incididunt eiusm tempor incididunt ut labore et ut labore eiusmod tempor eiusmod tempor incididunt ut labore et ut labore ett amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt eiusmod tempor incididunt ut labore et ut labore et aliqua. Ut enim ad minim adipiscing elit, sed do eiusmod tempor incididunt ut labore et </p>
           <div class="popover hide" id="po2">
       <span class="popover__content">
-        <div class="popover__content--invisible"> <div class="popover__header">Header</div>any of six international prizes awarded annually for outstanding work in physics, chemistry, physiology or medicine, literature, economics (since 1969), and the promotion of peace. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+        <div class="popover__content--invisible"> <h3 class="popover__header">Header</h3><p>any of six international prizes awarded annually for outstanding work in physics, chemistry, physiology or medicine, literature, economics (since 1969), and the promotion of peace. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </div>
         <span class="s-close"></span>
       </span>
       <span class="popover__caption">Nobel Prize</span>
     </div>
           <div class="popover hide" id="po1">
             <span class="popover__content">
-        <div class="popover__content--invisible"> <div class="popover__header">Header</div>labore et ut labore ett amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt eiusmod tempor incididunt ut labore et ut labore et aliqua. Ut enim ad minim adipiscing elit, sed do eiusmod tempor incididunt ut labore et </div>
+              <div class="popover__content--invisible"> <h3 class="popover__header">Header</h3><p>labore et ut labore ett amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt eiusmod tempor incididunt ut labore et ut labore et aliqua. Ut enim ad minim adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p> </div>
         <span class="s-close"></span>
       </span>
             <span class="popover__caption">Lorem ipsum</span>

@@ -2,12 +2,23 @@
 .popover-wrapper {
   position: relative;
 }
-
 .popover {
   position: absolute;
-  width: 300px;
-}
+  width: 30rem;
 
+  -webkit-transform: translateZ(0);
+  -webkit-transform: scale(0.94);
+  -moz-transform: scale(0.94);
+  -ms-transform: scale(0.94);
+  -o-transform: scale(0.94);
+  transform: scale(0.94);
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+
+}
 .s-icon {
   width: 5px;
   height: 5px;
@@ -16,32 +27,38 @@
   bottom: 15px;
   right: 0;
 }
-
 .s-close {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   @include bg-image("../images/ic_close.png");
   cursor: pointer;
   opacity: 1;
 }
-
 .s-close:hover {
   opacity: 0.35;
-  -webkit-transition: opacity 0.15s;
-  -moz-transition: opacity 0.15s;
-  -ms-transition: opacity 0.15s;
-  -o-transition: opacity 0.15s;
-  transition: opacity 0.15s;
+  -webkit-transition: opacity ease-out 0.15s;
+  -moz-transition: opacity ease-out 0.15s;
+  -ms-transition: opacity ease-out 0.15s;
+  -o-transition: opacity ease-out 0.15s;
+  transition: opacity ease-out 0.15s;
 }
-
 .popover-text {
   position: relative;
   cursor: pointer;
   color: #61AFDE;
   font-weight: bold;
+}
+
+.popover__content h3{
+  margin: 0;
+  padding: 0;
+}
+
+.popover__content p {
+  margin: 1.2rem;
 }
 
 .popover__content {
@@ -54,29 +71,25 @@
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   background-color: #EDECEA;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 2rem;
   white-space: normal;
   box-sizing: border-box;
-  border-top: 4px solid #C0BFBD;
+  border-top: 6px solid #C0BFBD;
   @include box-shadow;
+  -webkit-transition: max-height 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 220ms;
+  -moz-transition: max-height 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 220ms;
+  -o-transition: max-height 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 220ms;
+  transition: max-height 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 220ms; /* easeOutExpo */
 }
-
 .popover__content>div{
   font-size: 16px;
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 1.6rem 1.2rem 1.2rem 1.2rem;
 }
-
 .animated-height {
   max-height: 30rem;
-
-  -webkit-transition: max-height 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 150ms;
-  -moz-transition: max-height 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 150ms;
-  -o-transition: max-height 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 150ms;
-  transition: max-height 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 150ms; /* easeOutExpo */
 }
-
 .popover__header {
   padding-bottom: 1rem;
   font-weight: bold;
@@ -88,62 +101,37 @@
   @include box-shadow;
   color: white;
   display: block;
-  height: 3rem;
+  height: 3.8rem;
   left: 0;
-  line-height: 3rem;
+  line-height: 3.8rem;
   position: absolute;
   text-align: center;
   width: 100%;
   z-index: 100;
 }
-
 .popover__content .popover__content--invisible {
   opacity: 0;
+  -webkit-transition: opacity 350ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  -moz-transition: opacity 350ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  -o-transition: opacity 350ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  transition: opacity 350ms cubic-bezier(0.190, 1.000, 0.220, 1.000); /* easeOutExpo */
 }
-
 .popover__content--visible {
   opacity: 1;
-  -webkit-transition: opacity ease-out 0.35s .20s;
-  -moz-transition: opacity ease-out 0.35s .20s;
-  -ms-transition: opacity ease-out 0.35s .20s;
-  -o-transition: opacity ease-out 0.35s .20s;
-  transition: opacity ease-out 0.35s .20s;
+  -webkit-transition-delay: 350ms;
+  -moz-transition-delay: 350ms;
+  -ms-transition-delay: 350ms;
+  -o-transition-delay: 350ms;
+  transition-delay: 350ms;
 }
 
-.swing
+.popout
 {
-  -webkit-animation: swing 0.35s ease-out;
-  animation: swing 0.35s ease-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-@-webkit-keyframes swing
-{
-  0%
-  {
-    -webkit-transform: scale(0.94);
-    transform: scale(0.94);
-  }
-
-  100%
-  {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes swing
-{
-  0%
-  {
-    -webkit-transform: scale(0.94);
-    transform: scale(0.94);
-  }
-  100%
-  {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
 }
 
 .hide {

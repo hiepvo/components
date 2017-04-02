@@ -16,7 +16,8 @@
   visibility: hidden;
 }
 
-.tt-scale span {
+.tt-scale .vertical,
+.tt-scale .horizontal {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -24,12 +25,6 @@
   right: 0;
   background-color: $info-color;
   z-index: 10;
-}
-
-.tt-scale:hover span {
-  width: 100%;
-  height: 20rem;
-  opacity: 0.85;
 
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
@@ -42,6 +37,18 @@
   -ms-transition: height 0.5s, width 0.5s;
   -o-transition: height 0.5s, width 0.5s;
   transition: height 0.5s, width 0.5s;
+
+}
+
+.tt-scale:hover .vertical {
+  opacity: 0.85;
+  width: 100%;
+  height: 20rem;
+}
+.tt-scale:hover .horizontal {
+  opacity: 0.85;
+  width: 25rem;
+  height: 6rem;
 
 }
 
